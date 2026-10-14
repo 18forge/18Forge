@@ -17,6 +17,7 @@
 - 2026-10-14: Vercel builds main only (vercel.json), no preview builds for other branches.
 - 2026-10-14: 18forge.com (GoDaddy) added to the Vercel project, www.18forge.com redirects to it. DNS set at GoDaddy and verified by Vercel.
 - 2026-10-14: Main history cleaned of tool attribution; feature branches no longer use tool names.
+- 2026-10-14: Vercel bot comments on GitHub switched off (vercel.json github.silent).
 - 2026-10-14: Merging to main deploys to production, so merges only happen when Sacha says go.
 
 ## Open items
