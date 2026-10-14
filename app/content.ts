@@ -89,8 +89,9 @@ export const machinery = {
   ],
 };
 
-// Founder projects and demonstrations. Replace the placeholders with real
-// examples before this goes live; never list a client we have not worked for.
+// Founder projects and demonstrations. The section stays hidden while every
+// item is a placeholder. Fill in real examples and set placeholder to false;
+// never list a client we have not worked for.
 export const work = {
   id: "work",
   kicker: "Selected work",
@@ -99,18 +100,21 @@ export const work = {
     "18 Forge is new. Until client work can be shown, these are projects our founders have led, labelled for what they are.",
   items: [
     {
+      placeholder: true,
       label: "Founder project",
       title: "Project name",
       body: "One or two lines on the problem, what was made and the result.",
       tags: ["Create", "Build"],
     },
     {
+      placeholder: true,
       label: "Founder project",
       title: "Project name",
       body: "One or two lines on the problem, what was made and the result.",
       tags: ["Advise"],
     },
     {
+      placeholder: true,
       label: "Demonstration",
       title: "Project name",
       body: "One or two lines on the problem, what was made and the result.",

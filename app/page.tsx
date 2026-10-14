@@ -16,6 +16,7 @@ import { Monogram } from "./logo";
 export default function Home() {
   const year = new Date().getFullYear();
   const mailto = `mailto:${site.contactEmail}`;
+  const workItems = work.items.filter((item) => !item.placeholder);
 
   return (
     <>
@@ -114,25 +115,27 @@ export default function Home() {
           </ul>
         </section>
 
-        <section id={work.id} className="section work">
-          <p className="kicker">{work.kicker}</p>
-          <h2>{work.title}</h2>
-          <p className="lede">{work.intro}</p>
-          <div className="work-grid">
-            {work.items.map((item, index) => (
-              <article key={index} className="work-item">
-                <p className="work-label">{item.label}</p>
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
-                <ul className="work-tags">
-                  {item.tags.map((tag) => (
-                    <li key={tag}>{tag}</li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
-        </section>
+        {workItems.length > 0 && (
+          <section id={work.id} className="section work">
+            <p className="kicker">{work.kicker}</p>
+            <h2>{work.title}</h2>
+            <p className="lede">{work.intro}</p>
+            <div className="work-grid">
+              {workItems.map((item, index) => (
+                <article key={index} className="work-item">
+                  <p className="work-label">{item.label}</p>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                  <ul className="work-tags">
+                    {item.tags.map((tag) => (
+                      <li key={tag}>{tag}</li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="section houses">
           <p className="kicker">{houses.kicker}</p>
