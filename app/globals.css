@@ -97,15 +97,15 @@ h2 {
 .wordmark {
   display: inline-flex;
   align-items: center;
-  gap: 20px;
-  color: var(--accent);
+  gap: 16px;
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 1.9rem;
   letter-spacing: -0.01em;
   text-decoration: none;
 }
 
 .wordmark .mark {
+  color: var(--accent);
   width: auto;
   height: 0.95em;
 }
@@ -343,13 +343,6 @@ h1 em {
 }
 
 .menu-note { color: var(--paper-muted); text-align: right; }
-
-.menu-footnote {
-  margin: 32px 0 0;
-  font-family: var(--serif);
-  font-style: italic;
-  color: var(--paper-muted);
-}
 
 /* Machinery */
 

@@ -73,7 +73,6 @@ export const capabilities = {
     { name: "Strategy and growth", note: "Positioning, pricing, launches and sales." },
     { name: "Travel and experiences", note: "Journeys, events and private arrangements." },
   ],
-  footnote: "Take one, or take the lot.",
 };
 
 export const machinery = {
