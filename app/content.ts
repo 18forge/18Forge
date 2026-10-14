@@ -1,4 +1,4 @@
-// All landing page text lives here. Everything below is placeholder copy —
+// All landing page text lives here. Everything below is placeholder copy;
 // replace it once 18Forge's positioning is decided.
 
 export const site = {
