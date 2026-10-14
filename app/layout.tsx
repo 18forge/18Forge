@@ -1,5 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { site } from "./content";
+import { palette, paletteVars } from "./theme/colors";
+import { fontVars } from "./theme/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -7,9 +9,13 @@ export const metadata: Metadata = {
   description: site.description,
 };
 
+export const viewport: Viewport = {
+  themeColor: palette.ink,
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={fontVars} style={paletteVars}>
       <body>{children}</body>
     </html>
   );
