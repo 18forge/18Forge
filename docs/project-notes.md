@@ -16,9 +16,10 @@
 - 2026-10-14: Browser tab title set to "18 Forge".
 - 2026-10-14: Vercel builds main only (vercel.json), no preview builds for other branches.
 - 2026-10-14: 18forge.com (GoDaddy) added to the Vercel project, www.18forge.com redirects to it. DNS records to be set at GoDaddy.
+- 2026-10-14: Main history cleaned of tool attribution; feature branches no longer use tool names.
 - 2026-10-14: Merging to main deploys to production, so merges only happen when Sacha says go.
 
 ## Open items
 
-- Waiting to go live: PR #2 (tab title).
+- Waiting to go live: tab title, main-only builds (branch site-title-and-domain).
 - Real landing page copy and contact email (placeholders in `app/content.ts`).
