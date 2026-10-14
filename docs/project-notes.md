@@ -29,5 +29,4 @@
 
 ## Open items
 
-- Waiting to go live: calmer hero headline (branch hero-headline).
 - Selected work section: add two or three real founder projects in app/content.ts and set placeholder to false to show it.
