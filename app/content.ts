@@ -1,9 +1,9 @@
-// All landing page text lives here. Everything below is placeholder copy —
+// All landing page text lives here. Everything below is placeholder copy;
 // replace it once 18Forge's positioning is decided.
 
 export const site = {
   name: "18Forge",
-  title: "18Forge — Coming soon",
+  title: "18 Forge",
   description: "18Forge is being built. Check back soon.",
   // TODO: replace with the real contact address.
   contactEmail: "hello@example.com",
