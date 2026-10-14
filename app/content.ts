@@ -4,86 +4,122 @@ export const site = {
   name: "18 Forge",
   title: "18 Forge",
   description:
-    "An agency for luxury houses, hospitality, family offices and startups. We create, advise, consult and sell: websites, apps, ads, strategy, travel and AI.",
+    "An independent creative company for luxury houses, hospitality, family offices and startups. We create, build, advise and arrange: brands, campaigns, websites, apps, AI systems, strategy and travel.",
   contactEmail: "agency@18forge.com",
 };
 
 export const hero = {
-  eyebrow: "Advertising, technology and persuasion",
+  eyebrow: "Independent creative company",
   founded: "Est. 2026",
+  disciplines: "Strategy / Creative / Technology / Experiences",
   headline: "We make people want things.",
   headlineAccent: "Then we make them easy to buy.",
   subhead:
-    "18 Forge is an agency for luxury houses, hospitality, family offices and startups. Websites, apps, ads, strategy, travel and AI, under one roof and on one bill.",
-  cta: "Book a pitch",
+    "We turn ambitious ideas into brands, products, campaigns and experiences that work in the real world. For luxury houses, hospitality, family offices and startups, with one trusted point of contact.",
+  cta: "Start a conversation",
+  secondary: "See what we do",
 };
 
 export const ticker = [
+  "Brands",
+  "Campaigns",
   "Websites",
   "Apps",
-  "Advertising",
-  "Brand strategy",
+  "AI systems",
+  "Strategy",
   "Travel",
-  "AI implementation",
   "Content",
-  "Sales",
 ];
 
-export const treatment = {
-  kicker: "The treatment",
-  title: "Four acts. One table. Your brand in the chair.",
+export const services = {
+  id: "services",
+  kicker: "What we do",
+  title: "Four disciplines. One point of contact.",
   intro:
-    "Most agencies do one thing and send you somewhere else for the rest. We prefer the full treatment.",
-  acts: [
+    "Most agencies do one thing and send you elsewhere for the rest. We keep the whole job under one roof, so nothing gets lost between suppliers.",
+  pillars: [
     {
-      numeral: "I",
+      numeral: "01",
       title: "Create",
-      body: "Websites, apps, ads and content, made by hand and built to sell. Nothing off the shelf.",
+      body: "Brands, campaigns and content. Identity, film, print and social, made by hand and made to sell.",
     },
     {
-      numeral: "II",
+      numeral: "02",
+      title: "Build",
+      body: "Websites, apps and AI systems. Designed, built and looked after by the same people who wrote the brief.",
+    },
+    {
+      numeral: "03",
       title: "Advise",
-      body: "The honest second opinion before the expensive first mistake. On brand, on product, on where the money goes.",
+      body: "Strategy, positioning and growth. Pricing, launches and introductions, through to the campaigns that close the sale.",
     },
     {
-      numeral: "III",
-      title: "Consult",
-      body: "Strategy you can run on Monday: positioning, pricing, launches, and the customer's journey from first glance to final bill.",
-    },
-    {
-      numeral: "IV",
-      title: "Sell",
-      body: "We don't stop at pretty. We open doors, run the campaigns and land the deals and sales the work was made for.",
+      numeral: "04",
+      title: "Experience",
+      body: "Travel and bespoke solutions. Journeys, events and the arrangements that are hard to delegate to just anyone.",
     },
   ],
 };
 
-export const menu = {
-  kicker: "Served across the house",
-  title: "Tonight's menu",
+export const capabilities = {
+  kicker: "In detail",
+  title: "Everything under one roof.",
   items: [
-    { name: "Websites", note: "Fast, beautiful, bookable." },
+    { name: "Brand and identity", note: "Who you are, said once and said well." },
+    { name: "Advertising", note: "Print, film and social campaigns." },
+    { name: "Websites", note: "Fast, beautiful and easy to buy from." },
     { name: "Apps", note: "For customers, teams and the back office." },
-    { name: "Advertising", note: "Print, film and social. The full pour." },
-    { name: "Brand and strategy", note: "Who you are, said once and said well." },
-    { name: "Travel", note: "Journeys, partners and the places in between." },
-    { name: "AI implementation", note: "Workflows that run themselves, politely." },
-    { name: "Sales", note: "Introductions, campaigns, signatures." },
+    { name: "AI systems", note: "Automation you can see, check and switch off." },
+    { name: "Strategy and growth", note: "Positioning, pricing, launches and sales." },
+    { name: "Travel and experiences", note: "Journeys, events and private arrangements." },
   ],
-  price: "M.P.",
-  footnote: "Everything at market price. Tasting menus on request.",
+  footnote: "Take one, or take the lot.",
 };
 
 export const machinery = {
-  kicker: "The machinery",
+  kicker: "AI, with people in charge",
   title: "A little clockwork, beautifully dressed.",
-  body: "We put AI to work for companies and for people. You keep the taste and the judgement; the machine gets the chores.",
+  body: "We put AI to work for companies and for families. The machine takes the repetitive work; a named person on our side is accountable for every system, and nothing reaches your clients without the checks you agree.",
   examples: [
-    "Ads that test themselves overnight",
-    "Bookings and client messages answered around the clock",
-    "Trips planned door to door",
+    "Ad variations tested continuously, with every change approved by a person",
+    "Bookings and client messages answered around the clock, handed to your team when it matters",
+    "Trips planned door to door, checked before anything is booked",
     "Family logistics, from child care to calendars",
-    "Back-office paperwork, quietly done",
+    "Back-office paperwork, prepared for review and sign-off",
+  ],
+};
+
+// Founder projects and demonstrations. The section stays hidden while every
+// item is a placeholder. Fill in real examples and set placeholder to false;
+// never list a client we have not worked for.
+export const work = {
+  id: "work",
+  kicker: "Selected work",
+  title: "Founder projects and demonstrations.",
+  intro:
+    "18 Forge is new. Until client work can be shown, these are projects our founders have led, labelled for what they are.",
+  items: [
+    {
+      placeholder: true,
+      label: "Founder project",
+      title: "Project name",
+      body: "One or two lines on the problem, what was made and the result.",
+      tags: ["Create", "Build"],
+    },
+    {
+      placeholder: true,
+      label: "Founder project",
+      title: "Project name",
+      body: "One or two lines on the problem, what was made and the result.",
+      tags: ["Advise"],
+    },
+    {
+      placeholder: true,
+      label: "Demonstration",
+      title: "Project name",
+      body: "One or two lines on the problem, what was made and the result.",
+      tags: ["Build", "Experience"],
+    },
   ],
 };
 
@@ -92,11 +128,11 @@ export const houses = {
   items: [
     {
       title: "Luxury houses",
-      body: "Maisons and makers who sell craft, time and scarcity, and cannot afford to look ordinary for a single second.",
+      body: "Maisons and makers who sell craft, time and scarcity, and cannot afford to look ordinary.",
     },
     {
       title: "Hospitality",
-      body: "Places that live on first impressions, where every detail is noticed and every empty seat is a cost.",
+      body: "Hotels, residences and places to stay, where every detail is noticed and first impressions decide the booking.",
     },
     {
       title: "Family offices",
@@ -104,20 +140,19 @@ export const houses = {
     },
     {
       title: "Startups",
-      body: "Big ambitions on short runways. A brand, a product and a pitch that look a few rounds ahead of the bank balance.",
+      body: "Big ambitions on short runways. A brand, a product and a pitch that look a few rounds ahead.",
     },
   ],
   footnote: "And anyone else with taste and a deadline.",
 };
 
 export const closing = {
-  kicker: "Last orders",
-  title: "Pull up a chair.",
-  body: "Tell us what you are building, opening or selling. The first conversation is on the house.",
-  cta: "Write to us",
+  kicker: "Contact",
+  title: "Tell us what you are working on.",
+  body: "Building, opening, launching or selling: one email reaches the people who will do the work. There is no charge for a first conversation.",
+  cta: "Start a conversation",
 };
 
 export const footer = {
-  signoff: "Viddy well.",
   backToTop: "Back to top",
 };

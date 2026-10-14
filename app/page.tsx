@@ -1,13 +1,14 @@
 import {
+  capabilities,
   closing,
   footer,
   hero,
   houses,
   machinery,
-  menu,
+  services,
   site,
   ticker,
-  treatment,
+  work,
 } from "./content";
 import { BackToTop } from "./back-to-top";
 import { Monogram } from "./logo";
@@ -15,6 +16,7 @@ import { Monogram } from "./logo";
 export default function Home() {
   const year = new Date().getFullYear();
   const mailto = `mailto:${site.contactEmail}`;
+  const workItems = work.items.filter((item) => !item.placeholder);
 
   return (
     <>
@@ -35,6 +37,7 @@ export default function Home() {
               <span className="kicker-sep" aria-hidden="true"> · </span>
               <span className="kicker-founded">{hero.founded}</span>
             </p>
+            <p className="disciplines">{hero.disciplines}</p>
             <h1>
               {hero.headline}
               <em>{hero.headlineAccent}</em>
@@ -44,8 +47,8 @@ export default function Home() {
               <a className="button" href={mailto}>
                 {hero.cta}
               </a>
-              <a className="text-link" href={mailto}>
-                {site.contactEmail}
+              <a className="button button-ghost" href={`#${services.id}`}>
+                {hero.secondary}
               </a>
             </div>
           </div>
@@ -66,18 +69,18 @@ export default function Home() {
           <p className="visually-hidden">{ticker.join(", ")}</p>
         </div>
 
-        <section className="section treatment">
-          <p className="kicker">{treatment.kicker}</p>
-          <h2>{treatment.title}</h2>
-          <p className="lede">{treatment.intro}</p>
+        <section id={services.id} className="section treatment">
+          <p className="kicker">{services.kicker}</p>
+          <h2>{services.title}</h2>
+          <p className="lede">{services.intro}</p>
           <ol className="acts">
-            {treatment.acts.map((act) => (
-              <li key={act.title} className="act">
+            {services.pillars.map((pillar) => (
+              <li key={pillar.title} className="act">
                 <span className="numeral" aria-hidden="true">
-                  {act.numeral}
+                  {pillar.numeral}
                 </span>
-                <h3>{act.title}</h3>
-                <p>{act.body}</p>
+                <h3>{pillar.title}</h3>
+                <p>{pillar.body}</p>
               </li>
             ))}
           </ol>
@@ -85,21 +88,17 @@ export default function Home() {
 
         <section className="menu">
           <div className="menu-card">
-            <p className="kicker">{menu.kicker}</p>
-            <h2>{menu.title}</h2>
+            <p className="kicker">{capabilities.kicker}</p>
+            <h2>{capabilities.title}</h2>
             <ul className="menu-items">
-              {menu.items.map((item) => (
+              {capabilities.items.map((item) => (
                 <li key={item.name} className="menu-item">
-                  <span className="menu-line">
-                    <span className="menu-name">{item.name}</span>
-                    <span className="menu-dots" aria-hidden="true" />
-                    <span className="menu-price">{menu.price}</span>
-                  </span>
+                  <span className="menu-name">{item.name}</span>
                   <span className="menu-note">{item.note}</span>
                 </li>
               ))}
             </ul>
-            <p className="menu-footnote">{menu.footnote}</p>
+            <p className="menu-footnote">{capabilities.footnote}</p>
           </div>
         </section>
 
@@ -115,6 +114,28 @@ export default function Home() {
             ))}
           </ul>
         </section>
+
+        {workItems.length > 0 && (
+          <section id={work.id} className="section work">
+            <p className="kicker">{work.kicker}</p>
+            <h2>{work.title}</h2>
+            <p className="lede">{work.intro}</p>
+            <div className="work-grid">
+              {workItems.map((item, index) => (
+                <article key={index} className="work-item">
+                  <p className="work-label">{item.label}</p>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                  <ul className="work-tags">
+                    {item.tags.map((tag) => (
+                      <li key={tag}>{tag}</li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="section houses">
           <p className="kicker">{houses.kicker}</p>
@@ -146,7 +167,9 @@ export default function Home() {
         <span>
           © {year} {site.name}
         </span>
-        <span className="signoff">{footer.signoff}</span>
+        <a className="text-link" href={mailto}>
+          {site.contactEmail}
+        </a>
       </footer>
 
       <BackToTop label={footer.backToTop} />
