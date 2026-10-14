@@ -31,5 +31,4 @@
 
 ## Open items
 
-- Waiting to go live: no italic anywhere (branch no-italic).
 - Selected work section: add two or three real founder projects in app/content.ts and set placeholder to false to show it.
