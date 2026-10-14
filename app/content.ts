@@ -155,3 +155,21 @@ export const closing = {
 export const footer = {
   backToTop: "Back to top",
 };
+
+// The small assistant in the bottom right corner. It only appears when the
+// ANTHROPIC_API_KEY environment variable is set on the host.
+export const assistant = {
+  open: "Ask a question",
+  close: "Close",
+  title: "Ask 18 Forge",
+  greeting:
+    "Good to see you. Ask anything about what we do, or tell us what you are working on and we will point you in the right direction.",
+  suggestions: ["What do you do?", "Who do you work with?", "How do we start?"],
+  placeholder: "Type your question",
+  send: "Send",
+  thinking: "One moment",
+  note: "An automated assistant. A person answers every email.",
+  error:
+    "Sorry, I cannot answer right now. Please write to agency@18forge.com and one of us will reply.",
+  busy: "That is a lot of questions in a short time. Please try again in a few minutes, or write to agency@18forge.com.",
+};

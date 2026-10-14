@@ -11,6 +11,7 @@ import {
   work,
 } from "./content";
 import { BackToTop } from "./back-to-top";
+import { Chat } from "./chat";
 import { Monogram } from "./logo";
 
 export default function Home() {
@@ -172,6 +173,8 @@ export default function Home() {
       </footer>
 
       <BackToTop label={footer.backToTop} />
+      {/* The assistant only appears once its API key is set on the host. */}
+      {process.env.ANTHROPIC_API_KEY && <Chat />}
     </>
   );
 }

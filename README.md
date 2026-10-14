@@ -42,12 +42,16 @@ from commenting on GitHub.
 
 ## Environment variables
 
-The site needs **no** environment variables to build or run today; the page is
-fully static.
+The site needs **no** environment variables to build or run; the page is
+static. Setting `ANTHROPIC_API_KEY` turns on the assistant (the small chat
+button in the bottom right corner). Without it the button is simply not shown.
+The page checks for the key when it is built, so redeploy after adding it.
 
-| Variable        | Where it's used | Required |
-| --------------- | --------------- | -------- |
-| `VERCEL_TOKEN`  | Only for running the Vercel CLI locally (see `.env.example`). Never set it on the Vercel project. | No |
+| Variable            | Where it's used | Required |
+| ------------------- | --------------- | -------- |
+| `ANTHROPIC_API_KEY` | Server only, by `app/api/chat`. Set it on Production in the Vercel dashboard. | No |
+| `ASSISTANT_MODEL`   | Server only. Model the assistant uses; defaults to `claude-opus-5-5`. `claude-haiku-5-5` is far cheaper. | No |
+| `VERCEL_TOKEN`      | Only for running the Vercel CLI locally (see `.env.example`). Never set it on the Vercel project. | No |
 
 ### Supabase (not used yet)
 
