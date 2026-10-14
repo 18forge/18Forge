@@ -25,6 +25,8 @@
 
 - 2026-10-14: Top left logo about 1.6 times bigger, with the 18 in Hermes Orange and Forge in white. "Take one, or take the lot." removed. The two hero buttons now share one width.
 
+- 2026-10-14: Hero headline calmer: about 20% smaller, one upright serif at regular weight for both lines, orange alone marks the second line (no swash italic).
+
 ## Open items
 
 - Selected work section: add two or three real founder projects in app/content.ts and set placeholder to false to show it.
