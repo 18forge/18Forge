@@ -4,7 +4,6 @@ import { Inter, Playfair_Display } from "next/font/google";
 // stylesheet reads them as --font-display and --font-sans.
 export const display = Playfair_Display({
   subsets: ["latin"],
-  style: ["normal", "italic"],
   variable: "--font-display",
 });
 

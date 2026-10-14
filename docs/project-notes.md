@@ -27,6 +27,9 @@
 
 - 2026-10-14: Hero headline calmer: about 20% smaller, one upright serif at regular weight for both lines, orange alone marks the second line (no swash italic).
 
+- 2026-10-14: Swash italic removed from the whole site. Section headings, numerals and footnotes use the same upright regular-weight serif as the hero.
+
 ## Open items
 
+- Waiting to go live: no italic anywhere (branch no-italic).
 - Selected work section: add two or three real founder projects in app/content.ts and set placeholder to false to show it.
