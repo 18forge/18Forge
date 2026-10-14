@@ -145,7 +145,7 @@ export const houses = {
 export const closing = {
   kicker: "Contact",
   title: "Tell us what you are working on.",
-  body: "Building, opening, launching or selling: one email reaches the people who will do the work. The first conversation is on the house.",
+  body: "Building, opening, launching or selling: one email reaches the people who will do the work. There is no charge for a first conversation.",
   cta: "Start a conversation",
 };
 
