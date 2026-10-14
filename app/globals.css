@@ -49,6 +49,7 @@ h1, h2, h3 { margin: 0; font-weight: 600; }
 
 h2 {
   font-family: var(--serif);
+  font-weight: 400;
   font-size: clamp(2rem, 5vw, 3.25rem);
   line-height: 1.08;
   letter-spacing: -0.01em;
@@ -286,7 +287,8 @@ h1 em {
 .numeral {
   display: block;
   font-family: var(--serif);
-  font-style: italic;
+  font-weight: 400;
+  font-variant-numeric: lining-nums;
   font-size: 3rem;
   line-height: 1;
   color: var(--accent);
@@ -320,9 +322,7 @@ h1 em {
 
 .menu h2 {
   margin: 0 auto;
-  font-style: italic;
-  font-weight: 500;
-  font-size: clamp(2.6rem, 7vw, 4.5rem);
+  font-size: clamp(2.2rem, 6vw, 4rem);
   max-width: none;
 }
 
@@ -460,7 +460,6 @@ h1 em {
 .houses-footnote {
   margin: 28px 0 0;
   font-family: var(--serif);
-  font-style: italic;
   font-size: 1.15rem;
   color: var(--muted);
 }
