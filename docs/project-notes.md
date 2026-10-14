@@ -23,7 +23,7 @@
 - 2026-10-14: README documents the Vercel settings and environment variables; Node.js pinned to 20.9 or newer. PR #3.
 - 2026-10-14: Landing page reworked after an outside review: discreet tone with one or two playful touches, pillars Create / Build / Advise / Experience, most restaurant language cut, human oversight stated on every AI claim, main call to action "Start a conversation" (email) plus "See what we do", "Viddy well" dropped, new Selected work section for founder projects (hidden until real projects are added).
 
-- 2026-10-14: Top left logo about 1.6 times bigger, with the 18 in Hermes Orange and Forge in white. "Take one, or take the lot." removed.
+- 2026-10-14: Top left logo about 1.6 times bigger, with the 18 in Hermes Orange and Forge in white. "Take one, or take the lot." removed. The two hero buttons now share one width.
 
 ## Open items
 

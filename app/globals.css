@@ -187,6 +187,12 @@ h1 em {
 }
 .button:hover { background: var(--accent-soft); transform: translateY(-1px); }
 
+/* The two hero buttons share one width. */
+.actions .button {
+  min-width: 15rem;
+  text-align: center;
+}
+
 .button-ghost {
   background: transparent;
   color: var(--text);
