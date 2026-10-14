@@ -23,4 +23,4 @@
 
 ## Open items
 
-- None.
+- Waiting to go live: README and pinned Node version (PR #3).
