@@ -4,12 +4,8 @@ export const site = {
   name: "18 Forge",
   title: "18 Forge",
   description:
-    "An agency for hospitality and luxury. We create, advise, consult and sell: websites, apps, ads, strategy, travel and AI.",
+    "An agency for luxury houses, hospitality, family offices and startups. We create, advise, consult and sell: websites, apps, ads, strategy, travel and AI.",
   contactEmail: "agency@18forge.com",
-};
-
-export const nav = {
-  cta: "Book a pitch",
 };
 
 export const hero = {
@@ -17,7 +13,7 @@ export const hero = {
   headline: "We make people want things.",
   headlineAccent: "Then we make them easy to buy.",
   subhead:
-    "18 Forge is an agency for hotels, restaurants and luxury houses. Websites, apps, ads, strategy, travel and AI, under one roof and on one bill.",
+    "18 Forge is an agency for luxury houses, hospitality, family offices and startups. Websites, apps, ads, strategy, travel and AI, under one roof and on one bill.",
   cta: "Book a pitch",
 };
 
@@ -51,7 +47,7 @@ export const treatment = {
     {
       numeral: "III",
       title: "Consult",
-      body: "Strategy you can run on Monday: positioning, pricing, launches, and the guest's journey from first glance to final bill.",
+      body: "Strategy you can run on Monday: positioning, pricing, launches, and the customer's journey from first glance to final bill.",
     },
     {
       numeral: "IV",
@@ -66,7 +62,7 @@ export const menu = {
   title: "Tonight's menu",
   items: [
     { name: "Websites", note: "Fast, beautiful, bookable." },
-    { name: "Apps", note: "For guests, staff and the back office." },
+    { name: "Apps", note: "For customers, teams and the back office." },
     { name: "Advertising", note: "Print, film and social. The full pour." },
     { name: "Brand and strategy", note: "Who you are, said once and said well." },
     { name: "Travel", note: "Journeys, partners and the places in between." },
@@ -83,7 +79,7 @@ export const machinery = {
   body: "We put AI to work for companies and for people. You keep the taste and the judgement; the machine gets the chores.",
   examples: [
     "Ads that test themselves overnight",
-    "Bookings and guest messages answered around the clock",
+    "Bookings and client messages answered around the clock",
     "Trips planned door to door",
     "Family logistics, from child care to calendars",
     "Back-office paperwork, quietly done",
@@ -91,17 +87,26 @@ export const machinery = {
 };
 
 export const houses = {
-  kicker: "Two houses we know by heart",
+  kicker: "Who we work for",
   items: [
     {
-      title: "Hospitality",
-      body: "Hotels, restaurants and cafés, where every detail is somebody's first impression and every empty table is a cost.",
-    },
-    {
-      title: "Luxury",
+      title: "Luxury houses",
       body: "Maisons and makers who sell craft, time and scarcity, and cannot afford to look ordinary for a single second.",
     },
+    {
+      title: "Hospitality",
+      body: "Places that live on first impressions, where every detail is noticed and every empty seat is a cost.",
+    },
+    {
+      title: "Family offices",
+      body: "Discreet, demanding and long term. Sharper systems, quieter operations and a public face only when one is wanted.",
+    },
+    {
+      title: "Startups",
+      body: "Big ambitions on short runways. A brand, a product and a pitch that look a few rounds ahead of the bank balance.",
+    },
   ],
+  footnote: "And anyone else with taste and a deadline.",
 };
 
 export const closing = {

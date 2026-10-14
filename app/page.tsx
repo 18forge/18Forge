@@ -5,7 +5,6 @@ import {
   houses,
   machinery,
   menu,
-  nav,
   site,
   ticker,
   treatment,
@@ -23,9 +22,6 @@ export default function Home() {
           <Monogram className="mark" />
           <span className="visually-hidden">18 </span>
           Forge
-        </a>
-        <a className="nav-link" href={mailto}>
-          {nav.cta}
         </a>
       </header>
 
@@ -125,6 +121,7 @@ export default function Home() {
               </article>
             ))}
           </div>
+          <p className="houses-footnote">{houses.footnote}</p>
         </section>
 
         <section className="section closing">
