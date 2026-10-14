@@ -27,5 +27,4 @@
 
 ## Open items
 
-- Waiting to go live: bigger logo with orange 18 (branch logo-bigger-orange).
 - Selected work section: add two or three real founder projects in app/content.ts and set placeholder to false to show it.
