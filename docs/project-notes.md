@@ -19,9 +19,8 @@
 - 2026-10-14: Main history cleaned of tool attribution; feature branches no longer use tool names.
 - 2026-10-14: Vercel bot comments on GitHub switched off (vercel.json github.silent).
 - 2026-10-14: Merging to main deploys to production, so merges only happen when Sacha says go.
-- 2026-10-14: Back to top button: a small filled orange circle bottom right, shown after about one screen of scrolling.
+- 2026-10-14: Back to top button: a small filled orange circle bottom right, shown after about one screen of scrolling. PR #7.
 
 ## Open items
 
-- Waiting to go live: main-only builds and silent Vercel bot (branch site-title-and-domain).
-- Waiting to go live: back to top button (branch back-to-top).
+- Waiting to go live: README and pinned Node version (PR #3).
