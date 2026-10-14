@@ -3,6 +3,7 @@
      --orange) is set in app/theme/colors.ts, the fonts in app/theme/fonts.ts. */
   --bg: var(--ink);
   --surface: var(--charcoal);
+  --hero-mark: color-mix(in srgb, var(--alabaster) 7%, var(--charcoal));
   --border: color-mix(in srgb, var(--alabaster) 12%, var(--ink));
   --text: var(--alabaster);
   --muted: color-mix(in srgb, var(--alabaster) 65%, var(--ink));
@@ -134,7 +135,7 @@ h2 {
   top: 40px;
   width: min(56vw, 620px);
   height: auto;
-  color: var(--surface);
+  color: var(--hero-mark);
   z-index: -1;
 }
 
@@ -230,9 +231,11 @@ h1 em {
   to { transform: translateX(-50%); }
 }
 
+/* The ticker is part of the brand, so it keeps moving even when the
+   visitor asks for reduced motion. Everything else respects that setting. */
 @media (prefers-reduced-motion: reduce) {
-  .ticker-track { animation: none; }
   html { scroll-behavior: auto; }
+  .back-to-top { transition: none; }
 }
 
 /* Sections */
@@ -452,9 +455,49 @@ h1 em {
   font-style: italic;
 }
 
+/* Back to top */
+
+.back-to-top {
+  position: fixed;
+  z-index: 10;
+  right: max(var(--gutter), env(safe-area-inset-right));
+  bottom: max(var(--gutter), env(safe-area-inset-bottom));
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--ink) 45%, transparent);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s, background 0.15s ease;
+}
+.back-to-top[data-visible="true"] {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+.back-to-top:hover { background: var(--accent-soft); }
+.back-to-top:focus-visible {
+  outline: 2px solid var(--accent-soft);
+  outline-offset: 3px;
+}
+.back-to-top svg { width: 22px; height: 22px; }
+
+/* Leave room under the footer so the button never sits on its text. */
+.footer { padding-bottom: calc(48px + 2 * var(--gutter)); }
+
 @media (max-width: 760px) {
   :root { --gutter: 16px; }
   .hero { padding: 56px var(--gutter) 88px; }
+  .kicker-sep { display: none; }
+  .kicker-founded { display: block; margin-top: 6px; }
   .hero-mark { width: 88vw; right: -30%; top: 24px; }
   .section { padding-top: 96px; }
   .menu { margin-top: 96px; padding: 80px var(--gutter); }

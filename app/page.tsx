@@ -9,6 +9,7 @@ import {
   ticker,
   treatment,
 } from "./content";
+import { BackToTop } from "./back-to-top";
 import { Monogram } from "./logo";
 
 export default function Home() {
@@ -29,7 +30,11 @@ export default function Home() {
         <section className="hero">
           <Monogram className="hero-mark" />
           <div className="hero-copy">
-            <p className="kicker">{hero.eyebrow}</p>
+            <p className="kicker">
+              {hero.eyebrow}
+              <span className="kicker-sep" aria-hidden="true"> · </span>
+              <span className="kicker-founded">{hero.founded}</span>
+            </p>
             <h1>
               {hero.headline}
               <em>{hero.headlineAccent}</em>
@@ -143,6 +148,8 @@ export default function Home() {
         </span>
         <span className="signoff">{footer.signoff}</span>
       </footer>
+
+      <BackToTop label={footer.backToTop} />
     </>
   );
 }

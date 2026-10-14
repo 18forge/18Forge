@@ -9,7 +9,8 @@ export const site = {
 };
 
 export const hero = {
-  eyebrow: "Advertising, technology and persuasion · Est. 2026",
+  eyebrow: "Advertising, technology and persuasion",
+  founded: "Est. 2026",
   headline: "We make people want things.",
   headlineAccent: "Then we make them easy to buy.",
   subhead:
@@ -118,4 +119,5 @@ export const closing = {
 
 export const footer = {
   signoff: "Viddy well.",
+  backToTop: "Back to top",
 };
