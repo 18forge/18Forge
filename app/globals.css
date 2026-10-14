@@ -230,8 +230,9 @@ h1 em {
   to { transform: translateX(-50%); }
 }
 
+/* The ticker is part of the brand, so it keeps moving even when the
+   visitor asks for reduced motion. Everything else respects that setting. */
 @media (prefers-reduced-motion: reduce) {
-  .ticker-track { animation: none; }
   html { scroll-behavior: auto; }
 }
 
