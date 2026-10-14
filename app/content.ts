@@ -52,7 +52,7 @@ export const treatment = {
     {
       numeral: "IV",
       title: "Sell",
-      body: "We don't stop at pretty. We open doors, run the campaigns and close the business the work was made for.",
+      body: "We don't stop at pretty. We open doors, run the campaigns and land the deals and sales the work was made for.",
     },
   ],
 };
