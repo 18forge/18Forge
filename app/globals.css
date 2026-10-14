@@ -235,6 +235,7 @@ h1 em {
    visitor asks for reduced motion. Everything else respects that setting. */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .back-to-top { transition: none; }
 }
 
 /* Sections */
@@ -453,6 +454,44 @@ h1 em {
   font-family: var(--serif);
   font-style: italic;
 }
+
+/* Back to top */
+
+.back-to-top {
+  position: fixed;
+  z-index: 10;
+  right: max(var(--gutter), env(safe-area-inset-right));
+  bottom: max(var(--gutter), env(safe-area-inset-bottom));
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--ink) 45%, transparent);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s, background 0.15s ease;
+}
+.back-to-top[data-visible="true"] {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+.back-to-top:hover { background: var(--accent-soft); }
+.back-to-top:focus-visible {
+  outline: 2px solid var(--accent-soft);
+  outline-offset: 3px;
+}
+.back-to-top svg { width: 22px; height: 22px; }
+
+/* Leave room under the footer so the button never sits on its text. */
+.footer { padding-bottom: calc(48px + 2 * var(--gutter)); }
 
 @media (max-width: 760px) {
   :root { --gutter: 16px; }

@@ -9,6 +9,7 @@ import {
   ticker,
   treatment,
 } from "./content";
+import { BackToTop } from "./back-to-top";
 import { Monogram } from "./logo";
 
 export default function Home() {
@@ -147,6 +148,8 @@ export default function Home() {
         </span>
         <span className="signoff">{footer.signoff}</span>
       </footer>
+
+      <BackToTop label={footer.backToTop} />
     </>
   );
 }

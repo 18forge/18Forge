@@ -119,4 +119,5 @@ export const closing = {
 
 export const footer = {
   signoff: "Viddy well.",
+  backToTop: "Back to top",
 };
