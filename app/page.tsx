@@ -98,7 +98,6 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <p className="menu-footnote">{capabilities.footnote}</p>
           </div>
         </section>
 
