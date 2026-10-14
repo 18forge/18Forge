@@ -1,4 +1,5 @@
 import { features, hero, site } from "./content";
+import { Monogram } from "./logo";
 
 export default function Home() {
   const year = new Date().getFullYear();
@@ -7,8 +8,9 @@ export default function Home() {
     <>
       <header className="nav">
         <span className="wordmark">
-          <span className="mark" aria-hidden="true" />
-          {site.name}
+          <Monogram className="mark" />
+          <span className="visually-hidden">18 </span>
+          Forge
         </span>
         <a className="nav-link" href={`mailto:${site.contactEmail}`}>
           Contact

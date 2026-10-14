@@ -1,11 +1,14 @@
 :root {
-  --bg: #0e0d0c;
-  --surface: #181614;
-  --border: #2a2622;
-  --text: #f3eee8;
-  --muted: #a39a90;
-  --ember: #ff6a1f;
-  --ember-soft: #ff9a52;
+  /* Colour roles. The palette itself (--ink, --charcoal, --alabaster,
+     --orange) is defined in app/tokens.ts. */
+  --bg: var(--ink);
+  --surface: var(--charcoal);
+  --border: color-mix(in srgb, var(--alabaster) 12%, var(--ink));
+  --text: var(--alabaster);
+  --muted: color-mix(in srgb, var(--alabaster) 65%, var(--ink));
+  --accent: var(--orange);
+  --accent-soft: color-mix(in srgb, var(--orange) 80%, var(--alabaster));
+  --on-accent: var(--ink);
   --radius: 14px;
   --max: 1080px;
   --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -49,12 +52,18 @@ a { color: inherit; }
   letter-spacing: -0.01em;
 }
 
-.mark {
-  width: 14px;
-  height: 14px;
-  border-radius: 3px;
-  background: linear-gradient(135deg, var(--ember-soft), var(--ember));
-  transform: rotate(45deg);
+.wordmark .mark {
+  width: auto;
+  height: 0.95em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .nav-link {
@@ -76,7 +85,7 @@ a { color: inherit; }
   position: absolute;
   inset: 40px 10% auto;
   height: 320px;
-  background: radial-gradient(closest-side, rgba(255, 106, 31, 0.22), transparent);
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 22%, transparent), transparent);
   filter: blur(20px);
   z-index: -1;
 }
@@ -87,7 +96,7 @@ a { color: inherit; }
   padding: 4px 12px;
   border: 1px solid var(--border);
   border-radius: 999px;
-  color: var(--ember-soft);
+  color: var(--accent-soft);
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -111,15 +120,15 @@ h1 {
   display: inline-block;
   padding: 14px 28px;
   border-radius: 999px;
-  background: var(--ember);
-  color: #1a0d05;
+  background: var(--accent);
+  color: var(--on-accent);
   font-weight: 600;
   text-decoration: none;
   transition: background 0.15s ease, transform 0.15s ease;
 }
-.button:hover { background: var(--ember-soft); transform: translateY(-1px); }
+.button:hover { background: var(--accent-soft); transform: translateY(-1px); }
 .button:focus-visible, .nav-link:focus-visible {
-  outline: 2px solid var(--ember-soft);
+  outline: 2px solid var(--accent-soft);
   outline-offset: 3px;
 }
 
