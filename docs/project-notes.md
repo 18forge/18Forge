@@ -37,6 +37,7 @@
 - 2026-10-15: Footer shows the logo (orange 18 and Forge) after the year, "Forged by" with the 18 mark in the centre (grey, orange on hover, as on Eighteen Diamonds) and the email on the right. On phones the three lines stack, centred.
 - 2026-10-15: Ta-nnin links to tannin-web.vercel.app again (Sacha), card and /portfolio, with "Online Soon" after its Volkstraat line on the landing card and in its /portfolio write-up (soon: true in app/content.ts).
 - 2026-10-15: The landing page work section shows only Ta-nnin and 58 Diamonds (work.home in app/content.ts); all five stay on /portfolio. Ta-nnin is described as a wine bar on Volkstraat in Antwerp, with no link and no mention of a temporary address; its card and its /portfolio write-up end with "Online Soon". The work heading, on the landing and /portfolio, reads "A few of the houses we have dressed.", and the landing intro reads "These are some of the projects our founders have led." "Est. 2026" removed from the hero. The "All work" link under the landing work section is now "Portfolio", styled like the header link (orange on hover).
+- 2026-10-15: On phones every /portfolio project shows its picture first, then the text. The desktop rule that swaps sides on every second project was still winning on phones, so those projects showed text first.
 
 ## Open items
 
