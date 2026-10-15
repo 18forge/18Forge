@@ -209,6 +209,7 @@ export const closing = {
 };
 
 export const footer = {
+  credit: "Forged by 18",
   backToTop: "Back to top",
 };
 
