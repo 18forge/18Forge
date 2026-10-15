@@ -147,7 +147,7 @@ export const work = {
         "A membership app for families and babysitters. Verified profiles, browsing by city, encrypted messages and calls, bookings, and a live session screen from the first knock to the goodbye.",
         "Built once and shipped three ways: live on Android, in review for iOS, and on the web, with in-app memberships through Apple and Google and an admin behind it.",
       ],
-      role: "Brand, app, website, admin",
+      role: "App, website, admin",
       url: "https://18sitters.com",
       domain: "18sitters.com",
       image: "/work/18-sitters.jpg",
