@@ -118,7 +118,7 @@ export const work = {
       body: "Diamonds, fine jewellery and watches from New York's Diamond District.",
       about: [
         "A wholesale house on West 47th Street: loose diamonds, fine jewellery, luxury and vintage watches, and estate pieces bought and sold.",
-        "The site presents the collection, the buying service and special orders, and turns a visit into a phone call.",
+        "One quiet page in navy and ivory, built around a photograph of the wall sign. Services, what they buy and where to find them, with a call or an email as the only next step.",
       ],
       role: "Website",
       url: "https://eighteendiamonds.com",
