@@ -7,5 +7,12 @@
   },
   "github": {
     "silent": true
-  }
+  },
+  "redirects": [
+    {
+      "source": "/work",
+      "destination": "/portfolio",
+      "permanent": true
+    }
+  ]
 }

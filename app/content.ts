@@ -89,10 +89,10 @@ export const machinery = {
 };
 
 // Selected work. Shown as a short section on the landing page and in full
-// on /work. Only list projects we have actually made.
+// on /portfolio. Only list projects we have actually made.
 export const work = {
   id: "work",
-  path: "/work",
+  path: "/portfolio",
   kicker: "Selected work",
   title: "A few houses we have dressed.",
   intro:
@@ -155,7 +155,7 @@ export const work = {
   ],
 };
 
-// The /work page.
+// The /portfolio page.
 export const workPage = {
   title: "Selected work",
   intro:
@@ -200,7 +200,7 @@ export const footer = {
 };
 
 export const nav = {
-  work: "Work",
+  work: "Portfolio",
 };
 
 // The small assistant in the bottom right corner. It only appears when the
