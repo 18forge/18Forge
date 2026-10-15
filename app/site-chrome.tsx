@@ -66,7 +66,10 @@ export function WorkCard({ item }: { item: WorkItem }) {
       <WorkShot item={item} />
       <p className="work-label">{item.label}</p>
       <h3>{item.name}</h3>
-      <p>{item.body}</p>
+      <p>
+        {item.body}
+        {item.soon && <span className="work-soon"> {work.soon}</span>}
+      </p>
       <span className="work-domain">
         {item.url ? (
           <>
