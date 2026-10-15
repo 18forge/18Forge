@@ -103,11 +103,12 @@ export const work = {
     {
       name: "Ta-nnin",
       label: "Website, in preview",
-      body: "A new site, shown here before its launch. The address is temporary; the name is not.",
+      body: "Urban street wine on Volkstraat, Antwerp. Shown here before its launch; the address is temporary.",
       about: [
-        "A new name, given its first home online. The site is in preview while the rest of the house gets ready to open.",
+        "A wine bar on Volkstraat in Antwerp, with CE-LLAR, its bottle shop, across the street. One site covers both, in Dutch and English, lit by a neon sign traced from the logo.",
+        "The menu, wine list, bar list and events come from an admin the team runs themselves, and tables are booked in one tap. Behind it sits a full reservation system of our own, ready for the next venue.",
       ],
-      role: "Website",
+      role: "Website, admin",
       url: "https://tannin-web.vercel.app/",
       domain: "tannin-web.vercel.app",
       image: "/work/tannin.jpg",
