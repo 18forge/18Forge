@@ -35,5 +35,5 @@
 
 ## Open items
 
-- Selected work: the three screenshots in public/work are stand-ins until real ones are added. Sacha to confirm the write-ups (Ta-nnin and 58 Diamonds were written without seeing the sites), and swap the Ta-nnin address when its domain is live.
+- Selected work: swap the Ta-nnin address for ta-nnin.be when it launches. Write-ups come from each project's own notes; screenshots are in public/work.
 - Assistant: Sacha to choose the model and add ANTHROPIC_API_KEY (and ASSISTANT_MODEL if not the default) on Production in Vercel, then redeploy.
