@@ -208,7 +208,19 @@ h1 em {
 }
 .text-link:hover { color: var(--text); }
 
-.button:focus-visible, .text-link:focus-visible, .wordmark:focus-visible {
+.nav-link {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.nav-link:hover { color: var(--accent); }
+
+.button:focus-visible, .text-link:focus-visible, .wordmark:focus-visible,
+.nav-link:focus-visible, .work-item:focus-visible {
   outline: 2px solid var(--accent-soft);
   outline-offset: 3px;
 }
@@ -395,10 +407,15 @@ h1 em {
 }
 
 .work-item {
+  display: flex;
+  flex-direction: column;
   padding: 32px 28px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  text-decoration: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
 }
+.work-item:hover { border-color: var(--accent); background: var(--surface); }
 
 .work-label {
   margin: 0 0 16px;
@@ -412,27 +429,27 @@ h1 em {
 .work-item h3 {
   font-family: var(--serif);
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 400;
+  font-variant-numeric: lining-nums;
 }
 
 .work-item > p:not(.work-label) { margin: 10px 0 0; color: var(--muted); }
 
-.work-tags {
-  list-style: none;
-  margin: 24px 0 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.work-domain {
+  margin-top: auto;
+  padding-top: 24px;
+  color: var(--text);
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
 }
+.work-item:hover .work-domain { color: var(--accent); }
 
-.work-tags li {
-  padding: 4px 12px;
-  border-radius: 999px;
-  background: var(--surface);
-  color: var(--muted);
-  font-size: 0.8rem;
-}
+.work-more { display: inline-block; margin-top: 32px; }
+
+/* The /work page */
+
+.work-page { padding-top: 64px; }
+.work-page h1 { max-width: 18ch; }
 
 /* Houses */
 
@@ -730,6 +747,7 @@ body:has(.chat) .footer { padding-bottom: calc(2 * 48px + 12px + 2 * var(--gutte
   .menu-name { font-size: 1.25rem; }
   .menu-note { text-align: left; }
   .work-grid { grid-template-columns: 1fr; }
+  .work-page { padding-top: 40px; }
   .machinery { grid-template-columns: 1fr; gap: 40px; }
   .house-grid { grid-template-columns: 1fr; }
   .house { padding: 32px 24px; }

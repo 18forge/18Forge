@@ -31,7 +31,9 @@
 
 - 2026-10-14: Draft assistant on the landing page: a small chat button bottom right (back to top moves just above it) that answers from the site's own text and points visitors to agency@18forge.com. Server route app/api/chat, simple per visitor limit, nothing stored. Shown only when ANTHROPIC_API_KEY is set in Vercel. Model set by ASSISTANT_MODEL (default claude-opus-5-5, about 4 cents a conversation; claude-haiku-5-5 is about 0.1 cents).
 
+- 2026-10-15: Selected work turned on. New /work page ("A few houses we have dressed.") and the landing section now show Ta-nnin (temporary address tannin-web.vercel.app), Eighteen Diamonds and 58 Diamonds, each card linking to the live site. "Work" link added top right of the header. Header and footer now shared in app/site-chrome.tsx.
+
 ## Open items
 
-- Selected work section: add two or three real founder projects in app/content.ts and set placeholder to false to show it.
+- Selected work: Sacha to confirm the one-line descriptions of Ta-nnin and 58 Diamonds (written without being able to open those sites), and swap the Ta-nnin address when its domain is live.
 - Assistant: Sacha to choose the model and add ANTHROPIC_API_KEY (and ASSISTANT_MODEL if not the default) on Production in Vercel, then redeploy.

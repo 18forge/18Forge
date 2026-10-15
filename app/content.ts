@@ -88,38 +88,47 @@ export const machinery = {
   ],
 };
 
-// Founder projects and demonstrations. The section stays hidden while every
-// item is a placeholder. Fill in real examples and set placeholder to false;
-// never list a client we have not worked for.
+// Selected work. Shown as a short section on the landing page and in full
+// on /work. Only list projects we have actually made.
 export const work = {
   id: "work",
+  path: "/work",
   kicker: "Selected work",
-  title: "Founder projects and demonstrations.",
+  title: "A few houses we have dressed.",
   intro:
-    "18 Forge is new. Until client work can be shown, these are projects our founders have led, labelled for what they are.",
+    "18 Forge is new, so these are projects our founders have led. More will follow; the rest is kept in confidence.",
+  more: "All work",
   items: [
     {
-      placeholder: true,
-      label: "Founder project",
-      title: "Project name",
-      body: "One or two lines on the problem, what was made and the result.",
-      tags: ["Create", "Build"],
+      name: "Ta-nnin",
+      label: "Website, in preview",
+      body: "A new site, shown here before its launch. The address is temporary; the name is not.",
+      url: "https://tannin-web.vercel.app/",
+      domain: "tannin-web.vercel.app",
     },
     {
-      placeholder: true,
-      label: "Founder project",
-      title: "Project name",
-      body: "One or two lines on the problem, what was made and the result.",
-      tags: ["Advise"],
+      name: "Eighteen Diamonds",
+      label: "Website",
+      body: "Diamonds, fine jewellery and watches from New York's Diamond District.",
+      url: "https://eighteendiamonds.com",
+      domain: "eighteendiamonds.com",
     },
     {
-      placeholder: true,
-      label: "Demonstration",
-      title: "Project name",
-      body: "One or two lines on the problem, what was made and the result.",
-      tags: ["Build", "Experience"],
+      name: "58 Diamonds",
+      label: "Website",
+      body: "Diamonds and fine jewellery, presented online with the same care as in the salon.",
+      url: "https://58diamonds.com",
+      domain: "58diamonds.com",
     },
   ],
+};
+
+// The /work page.
+export const workPage = {
+  title: "Selected work",
+  intro:
+    "Brands, websites and systems made by the people behind 18 Forge. Each one links to the real thing.",
+  closingTitle: "Yours could be next.",
 };
 
 export const houses = {
@@ -154,6 +163,10 @@ export const closing = {
 
 export const footer = {
   backToTop: "Back to top",
+};
+
+export const nav = {
+  work: "Work",
 };
 
 // The small assistant in the bottom right corner. It only appears when the
