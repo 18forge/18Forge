@@ -173,6 +173,7 @@ export const work = {
 // The /portfolio page.
 export const workPage = {
   title: "Selected work",
+  heading: "A few of the houses we have dressed.",
   intro:
     "Brands, websites and systems made by the people behind 18 Forge. Each one links to the real thing.",
   role: "What we did",
