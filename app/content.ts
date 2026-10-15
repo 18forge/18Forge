@@ -88,38 +88,81 @@ export const machinery = {
   ],
 };
 
-// Founder projects and demonstrations. The section stays hidden while every
-// item is a placeholder. Fill in real examples and set placeholder to false;
-// never list a client we have not worked for.
+// Selected work. Shown as a short section on the landing page and in full
+// on /work. Only list projects we have actually made.
 export const work = {
   id: "work",
+  path: "/work",
   kicker: "Selected work",
-  title: "Founder projects and demonstrations.",
+  title: "A few houses we have dressed.",
   intro:
-    "18 Forge is new. Until client work can be shown, these are projects our founders have led, labelled for what they are.",
+    "18 Forge is new, so these are projects our founders have led. More will follow; the rest is kept in confidence.",
+  more: "All work",
+  // image: a screenshot of the site in public/work, 1600 x 1000 pixels.
   items: [
     {
-      placeholder: true,
-      label: "Founder project",
-      title: "Project name",
-      body: "One or two lines on the problem, what was made and the result.",
-      tags: ["Create", "Build"],
+      name: "Ta-nnin",
+      label: "Website, in preview",
+      body: "Urban street wine on Volkstraat, Antwerp. Shown here before its launch; the address is temporary.",
+      about: [
+        "A wine bar on Volkstraat in Antwerp, with CE-LLAR, its bottle shop, across the street. One site covers both, in Dutch and English, lit by a neon sign traced from the logo.",
+        "The menu, wine list, bar list and events come from an admin the team runs themselves, and tables are booked in one tap. Behind it sits a full reservation system of our own, ready for the next venue.",
+      ],
+      role: "Website, admin",
+      url: "https://tannin-web.vercel.app/",
+      domain: "tannin-web.vercel.app",
+      image: "/work/tannin.jpg",
     },
     {
-      placeholder: true,
-      label: "Founder project",
-      title: "Project name",
-      body: "One or two lines on the problem, what was made and the result.",
-      tags: ["Advise"],
+      name: "Eighteen Diamonds",
+      label: "Website",
+      body: "Diamonds, fine jewellery and watches from New York's Diamond District.",
+      about: [
+        "A wholesale house on West 47th Street: loose diamonds, fine jewellery, luxury and vintage watches, and estate pieces bought and sold.",
+        "One quiet page in navy and ivory, built around a photograph of the wall sign. Services, what they buy and where to find them, with a call or an email as the only next step.",
+      ],
+      role: "Website",
+      url: "https://eighteendiamonds.com",
+      domain: "eighteendiamonds.com",
+      image: "/work/eighteen-diamonds.jpg",
     },
     {
-      placeholder: true,
-      label: "Demonstration",
-      title: "Project name",
-      body: "One or two lines on the problem, what was made and the result.",
-      tags: ["Build", "Experience"],
+      name: "58 Diamonds",
+      label: "Website",
+      body: "Fine jewellery by Farah, in Antwerp and by appointment.",
+      about: [
+        "Rings, necklaces, earrings and bracelets, made by Farah and shown by appointment in Antwerp. The site presents the collection in English, Dutch and French, with a WhatsApp line and viewing requests on every piece.",
+        "Behind it sits an admin Farah runs herself: pieces, photos, pages, events and translations. A full shop with checkout and EU VAT is built in, ready to switch on.",
+      ],
+      role: "Website, admin, shop",
+      url: "https://58diamonds.com",
+      domain: "58diamonds.com",
+      image: "/work/58-diamonds.jpg",
+    },
+    {
+      name: "18 Sitters",
+      label: "iOS and Android app",
+      body: "Trusted childcare with Jewish values: an app that brings families and sitters together.",
+      about: [
+        "A membership app for families and babysitters. Verified profiles, browsing by city, encrypted messages and calls, bookings, and a live session screen from the first knock to the goodbye.",
+        "Built once and shipped three ways: live on Android, in review for iOS, and on the web, with in-app memberships through Apple and Google and an admin behind it.",
+      ],
+      role: "App, website, admin",
+      url: "https://18sitters.com",
+      domain: "18sitters.com",
+      image: "/work/18-sitters.jpg",
     },
   ],
+};
+
+// The /work page.
+export const workPage = {
+  title: "Selected work",
+  intro:
+    "Brands, websites and systems made by the people behind 18 Forge. Each one links to the real thing.",
+  role: "What we did",
+  visit: "Visit the site",
+  closingTitle: "Yours could be next.",
 };
 
 export const houses = {
@@ -154,6 +197,10 @@ export const closing = {
 
 export const footer = {
   backToTop: "Back to top",
+};
+
+export const nav = {
+  work: "Work",
 };
 
 // The small assistant in the bottom right corner. It only appears when the
