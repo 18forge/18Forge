@@ -5,6 +5,7 @@ import {
   hero,
   houses,
   machinery,
+  nav,
   services,
   site,
   ticker,
@@ -116,8 +117,8 @@ export default function Home() {
               <WorkCard key={item.name} item={item} />
             ))}
           </div>
-          <a className="text-link work-more" href={work.path}>
-            {work.more}
+          <a className="nav-link work-more" href={work.path}>
+            {nav.work}
           </a>
         </section>
 

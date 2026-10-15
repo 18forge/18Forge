@@ -95,7 +95,6 @@ export const work = {
   kicker: "Selected work",
   title: "A few of the houses we have dressed.",
   intro: "These are some of the projects our founders have led.",
-  more: "All work",
   // Projects without a live address yet show this instead of a link.
   soon: "Online Soon",
   // The landing page shows only these, in this order.
