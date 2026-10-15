@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { closing, footer, site, work, workPage } from "../content";
 import { BackToTop } from "../back-to-top";
+import { Chat } from "../chat";
 import { SiteFooter, SiteHeader, WorkShot } from "../site-chrome";
 
 export const metadata: Metadata = {
@@ -61,6 +62,8 @@ export default function WorkPage() {
 
       <SiteFooter />
       <BackToTop label={footer.backToTop} />
+      {/* The assistant only appears once its API key is set on the host. */}
+      {process.env.ANTHROPIC_API_KEY && <Chat />}
     </>
   );
 }
