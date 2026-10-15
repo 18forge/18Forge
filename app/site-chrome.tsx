@@ -59,18 +59,32 @@ export function WorkShot({ item }: { item: WorkItem }) {
   );
 }
 
-// One project: the whole card links to the live site.
+// One project: the whole card links to the live site, once there is one.
 export function WorkCard({ item }: { item: WorkItem }) {
-  return (
-    <a className="work-item" href={item.url} target="_blank" rel="noopener">
+  const inner = (
+    <>
       <WorkShot item={item} />
       <p className="work-label">{item.label}</p>
       <h3>{item.name}</h3>
       <p>{item.body}</p>
       <span className="work-domain">
-        {item.domain}
-        <span aria-hidden="true"> ↗</span>
+        {item.url ? (
+          <>
+            {item.domain}
+            <span aria-hidden="true"> ↗</span>
+          </>
+        ) : (
+          work.soon
+        )}
       </span>
+    </>
+  );
+
+  return item.url ? (
+    <a className="work-item" href={item.url} target="_blank" rel="noopener">
+      {inner}
     </a>
+  ) : (
+    <div className="work-item">{inner}</div>
   );
 }

@@ -15,6 +15,9 @@ import { Chat } from "./chat";
 import { Monogram } from "./logo";
 import { SiteFooter, SiteHeader, WorkCard } from "./site-chrome";
 
+// The few projects the landing page shows; the rest are on /portfolio.
+const homeWork = work.home.flatMap((name) => work.items.filter((item) => item.name === name));
+
 export default function Home() {
   const mailto = `mailto:${site.contactEmail}`;
 
@@ -113,7 +116,7 @@ export default function Home() {
           <h2>{work.title}</h2>
           <p className="lede">{work.intro}</p>
           <div className="work-grid">
-            {work.items.map((item) => (
+            {homeWork.map((item) => (
               <WorkCard key={item.name} item={item} />
             ))}
           </div>

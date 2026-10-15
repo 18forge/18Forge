@@ -415,7 +415,7 @@ h1 em {
   text-decoration: none;
   transition: border-color 0.15s ease, background 0.15s ease;
 }
-.work-item:hover { border-color: var(--accent); background: var(--surface); }
+a.work-item:hover { border-color: var(--accent); background: var(--surface); }
 
 .work-shot {
   display: block;
@@ -461,7 +461,7 @@ h1 em {
   font-size: 0.875rem;
   overflow-wrap: anywhere;
 }
-.work-item:hover .work-domain { color: var(--accent); }
+a.work-item:hover .work-domain { color: var(--accent); }
 
 .work-more { display: inline-block; margin-top: 32px; }
 
@@ -483,11 +483,12 @@ h1 em {
   align-items: center;
 }
 .case:nth-child(even) { grid-template-columns: 1fr 1.4fr; }
-.case:nth-child(even) > a { order: 2; }
+.case:nth-child(even) > :first-child { order: 2; }
 .case .work-shot { margin: 0; }
 
 .case h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-variant-numeric: lining-nums; }
 .case-copy > p:not(.work-label) { margin: 16px 0 0; color: var(--muted); }
+.case-copy > p.case-soon { color: var(--accent); }
 .case-copy > .case-role { margin-top: 24px; color: var(--text); font-size: 0.875rem; }
 .case-role span {
   display: block;

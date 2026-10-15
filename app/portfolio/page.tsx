@@ -24,23 +24,30 @@ export default function WorkPage() {
           <div className="case-list">
             {work.items.map((item) => (
               <article key={item.name} className="case">
-                <a href={item.url} target="_blank" rel="noopener" tabIndex={-1}>
+                {item.url ? (
+                  <a href={item.url} target="_blank" rel="noopener" tabIndex={-1}>
+                    <WorkShot item={item} />
+                  </a>
+                ) : (
                   <WorkShot item={item} />
-                </a>
+                )}
                 <div className="case-copy">
                   <p className="work-label">{item.label}</p>
                   <h2>{item.name}</h2>
                   {item.about.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
                   ))}
+                  {!item.url && <p className="case-soon">{work.soon}</p>}
                   <p className="case-role">
                     <span>{workPage.role}</span>
                     {item.role}
                   </p>
-                  <a className="text-link" href={item.url} target="_blank" rel="noopener">
-                    {workPage.visit}
-                    <span aria-hidden="true"> ↗</span>
-                  </a>
+                  {item.url && (
+                    <a className="text-link" href={item.url} target="_blank" rel="noopener">
+                      {workPage.visit}
+                      <span aria-hidden="true"> ↗</span>
+                    </a>
+                  )}
                 </div>
               </article>
             ))}

@@ -28,7 +28,7 @@ const facts = [
   "",
   `${work.kicker} (${work.intro}) Shown at ${site.title} ${work.path}:`,
   ...work.items.map(
-    (w) => `- ${w.name} (${w.label}, ${w.url}): ${w.about.join(" ")} What we did: ${w.role}.`,
+    (w) => `- ${w.name} (${w.label}, ${w.url ?? work.soon}): ${w.about.join(" ")} What we did: ${w.role}.`,
   ),
   "",
   `${houses.kicker}:`,

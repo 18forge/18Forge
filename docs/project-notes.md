@@ -35,8 +35,9 @@
 - 2026-10-15: The work page moved to /portfolio (the old /work address redirects there) and the header link now reads "Portfolio", since "Work" read like a jobs link. The assistant shows on the portfolio page too.
 - 2026-10-15: Mezze House added to the portfolio: a restaurant concept (site, live booking and the proposal behind it) at mezzehouse.netlify.app, with placeholder name, address and photos.
 - 2026-10-15: Footer shows the logo (orange 18 and Forge) after the year, "Forged by" with the 18 mark in the centre (grey, orange on hover, as on Eighteen Diamonds) and the email on the right. On phones the three lines stack, centred.
+- 2026-10-15: The landing page work section shows only Ta-nnin and 58 Diamonds (work.home in app/content.ts); all five stay on /portfolio. Ta-nnin is described as a wine bar on Volkstraat in Antwerp, with no link and no mention of a temporary address; its card and its /portfolio write-up end with "Online Soon".
 
 ## Open items
 
-- Selected work: swap the Ta-nnin address for ta-nnin.be when it launches. Write-ups come from each project's own notes; screenshots are in public/work.
+- Selected work: when ta-nnin.be launches, add its url and domain back to the Ta-nnin entry in app/content.ts (the "Online Soon" line then disappears on its own). Write-ups come from each project's own notes; screenshots are in public/work.
 - Assistant: Sacha to choose the model and add ANTHROPIC_API_KEY (and ASSISTANT_MODEL if not the default) on Production in Vercel, then redeploy.
