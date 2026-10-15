@@ -5,6 +5,7 @@ import {
   hero,
   houses,
   machinery,
+  nav,
   services,
   site,
   ticker,
@@ -14,6 +15,9 @@ import { BackToTop } from "./back-to-top";
 import { Chat } from "./chat";
 import { Monogram } from "./logo";
 import { SiteFooter, SiteHeader, WorkCard } from "./site-chrome";
+
+// The few projects the landing page shows; the rest are on /portfolio.
+const homeWork = work.home.flatMap((name) => work.items.filter((item) => item.name === name));
 
 export default function Home() {
   const mailto = `mailto:${site.contactEmail}`;
@@ -26,11 +30,7 @@ export default function Home() {
         <section className="hero">
           <Monogram className="hero-mark" />
           <div className="hero-copy">
-            <p className="kicker">
-              {hero.eyebrow}
-              <span className="kicker-sep" aria-hidden="true"> · </span>
-              <span className="kicker-founded">{hero.founded}</span>
-            </p>
+            <p className="kicker">{hero.eyebrow}</p>
             <p className="disciplines">{hero.disciplines}</p>
             <h1>
               {hero.headline}
@@ -113,12 +113,12 @@ export default function Home() {
           <h2>{work.title}</h2>
           <p className="lede">{work.intro}</p>
           <div className="work-grid">
-            {work.items.map((item) => (
+            {homeWork.map((item) => (
               <WorkCard key={item.name} item={item} />
             ))}
           </div>
-          <a className="text-link work-more" href={work.path}>
-            {work.more}
+          <a className="nav-link work-more" href={work.path}>
+            {nav.work}
           </a>
         </section>
 

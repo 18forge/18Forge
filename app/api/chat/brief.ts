@@ -13,7 +13,7 @@ import {
 // so the two never drift apart.
 const facts = [
   `Name: ${site.name}. Contact: ${site.contactEmail}.`,
-  `${hero.eyebrow}, ${hero.founded.toLowerCase()}. Disciplines: ${hero.disciplines}.`,
+  `${hero.eyebrow}. Disciplines: ${hero.disciplines}.`,
   `${hero.headline} ${hero.headlineAccent}`,
   hero.subhead,
   "",
@@ -28,7 +28,7 @@ const facts = [
   "",
   `${work.kicker} (${work.intro}) Shown at ${site.title} ${work.path}:`,
   ...work.items.map(
-    (w) => `- ${w.name} (${w.label}, ${w.url}): ${w.about.join(" ")} What we did: ${w.role}.`,
+    (w) => `- ${w.name} (${w.label}, ${w.url ?? work.soon}): ${w.about.join(" ")} What we did: ${w.role}.`,
   ),
   "",
   `${houses.kicker}:`,

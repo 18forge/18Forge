@@ -10,7 +10,6 @@ export const site = {
 
 export const hero = {
   eyebrow: "Independent creative company",
-  founded: "Est. 2026",
   disciplines: "Strategy / Creative / Technology / Experiences",
   headline: "We make people want things.",
   headlineAccent: "Then we make them easy to buy.",
@@ -94,23 +93,23 @@ export const work = {
   id: "work",
   path: "/portfolio",
   kicker: "Selected work",
-  title: "A few houses we have dressed.",
-  intro:
-    "18 Forge is new, so these are projects our founders have led. More will follow; the rest is kept in confidence.",
-  more: "All work",
+  title: "A few of the houses we have dressed.",
+  intro: "These are some of the projects our founders have led.",
+  // Projects without a live address yet show this instead of a link.
+  soon: "Online Soon",
+  // The landing page shows only these, in this order.
+  home: ["Ta-nnin", "58 Diamonds"],
   // image: a screenshot of the site in public/work, 1600 x 1000 pixels.
   items: [
     {
       name: "Ta-nnin",
-      label: "Website, in preview",
-      body: "Urban street wine on Volkstraat, Antwerp. Shown here before its launch; the address is temporary.",
+      label: "Website",
+      body: "A wine bar on Volkstraat in Antwerp.",
       about: [
         "A wine bar on Volkstraat in Antwerp, with CE-LLAR, its bottle shop, across the street. One site covers both, in Dutch and English, lit by a neon sign traced from the logo.",
         "The menu, wine list, bar list and events come from an admin the team runs themselves, and tables are booked in one tap. Behind it sits a full reservation system of our own, ready for the next venue.",
       ],
       role: "Website, admin",
-      url: "https://tannin-web.vercel.app/",
-      domain: "tannin-web.vercel.app",
       image: "/work/tannin.jpg",
     },
     {
