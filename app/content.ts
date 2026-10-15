@@ -139,6 +139,19 @@ export const work = {
       domain: "58diamonds.com",
       image: "/work/58-diamonds.jpg",
     },
+    {
+      name: "18 Sitters",
+      label: "iOS and Android app",
+      body: "Trusted childcare with Jewish values: an app that brings families and sitters together.",
+      about: [
+        "A membership app for families and babysitters. Verified profiles, browsing by city, encrypted messages and calls, bookings, and a live session screen from the first knock to the goodbye.",
+        "Built once and shipped three ways: live on Android, in review for iOS, and on the web, with in-app memberships through Apple and Google and an admin behind it.",
+      ],
+      role: "Brand, app, website, admin",
+      url: "https://18sitters.com",
+      domain: "18sitters.com",
+      image: "/work/18-sitters.jpg",
+    },
   ],
 };
 
