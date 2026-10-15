@@ -34,7 +34,7 @@
 - 2026-10-15: Selected work turned on. New /work page ("A few houses we have dressed.") and the landing section now show Ta-nnin (temporary address tannin-web.vercel.app), Eighteen Diamonds, 58 Diamonds and the 18 Sitters app, each card linking to the live site. "Work" link added top right of the header. Header and footer now shared in app/site-chrome.tsx. Each project has a screenshot (public/work, 1600 x 1000) and a short write-up on /work.
 - 2026-10-15: The work page moved to /portfolio (the old /work address redirects there) and the header link now reads "Portfolio", since "Work" read like a jobs link. The assistant shows on the portfolio page too.
 - 2026-10-15: Mezze House added to the portfolio: a restaurant concept (site, live booking and the proposal behind it) at mezzehouse.netlify.app, with placeholder name, address and photos.
-- 2026-10-15: Footer shows the logo (orange 18 and Forge) after the year, "Forged by 18" in the centre and the email on the right. On phones the three lines stack, centred.
+- 2026-10-15: Footer shows the logo (orange 18 and Forge) after the year, "Forged by" with the 18 mark in the centre (grey, orange on hover, as on Eighteen Diamonds) and the email on the right. On phones the three lines stack, centred.
 
 ## Open items
 

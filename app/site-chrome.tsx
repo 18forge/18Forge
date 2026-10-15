@@ -30,7 +30,11 @@ export function SiteFooter() {
           Forge
         </span>
       </span>
-      <span className="footer-credit">{footer.credit}</span>
+      <a className="footer-credit" href="/">
+        {footer.credit}
+        <Monogram className="mark" />
+        <span className="visually-hidden">18</span>
+      </a>
       <a className="text-link footer-email" href={`mailto:${site.contactEmail}`}>
         {site.contactEmail}
       </a>

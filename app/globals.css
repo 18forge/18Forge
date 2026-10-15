@@ -586,7 +586,23 @@ h1 em {
   height: 0.95em;
 }
 
-.footer-credit { text-align: center; }
+.footer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.footer-credit .mark {
+  width: auto;
+  height: 0.95em;
+}
+.footer-credit:hover { color: var(--accent); }
+.footer-credit:focus-visible {
+  outline: 2px solid var(--accent-soft);
+  outline-offset: 3px;
+}
 
 .footer-email { justify-self: end; }
 
