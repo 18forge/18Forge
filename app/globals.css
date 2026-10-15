@@ -859,4 +859,26 @@ body:has(.chat) .footer { padding-bottom: calc(2 * 48px + 12px + 2 * var(--gutte
   .house-grid { grid-template-columns: 1fr; }
   .house { padding: 32px 24px; }
   .closing { padding-bottom: 96px; }
+
+  /* More air on phones: sections, pillars, cards and projects each get
+     room to breathe, so the page reads one idea at a time. */
+  .section { padding-top: 136px; }
+  .menu { margin-top: 136px; padding: 104px var(--gutter); }
+  .menu-items { margin-top: 48px; }
+  .menu-item { padding: 22px 0; }
+  .acts { margin-top: 48px; }
+  .act { padding: 40px 0 24px; }
+  .act + .act { border-top: 1px solid var(--border); }
+  .examples li { padding: 22px 0 22px 32px; }
+  .work-grid { margin-top: 48px; gap: 28px; }
+  .work-more { margin-top: 40px; }
+  .case-list { margin-top: 72px; gap: 64px; }
+  .case { gap: 32px; }
+  .case + .case { padding-top: 64px; border-top: 1px solid var(--border); }
+  .case-copy > p:not(.work-label) { margin-top: 20px; }
+  .house-grid { gap: 24px; }
+  .house { padding: 40px 28px; }
+  .houses-footnote { margin-top: 40px; }
+  .machinery { gap: 56px; }
+  .closing { padding-bottom: 136px; }
 }

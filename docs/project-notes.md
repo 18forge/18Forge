@@ -38,6 +38,7 @@
 - 2026-10-15: Ta-nnin links to tannin-web.vercel.app again (Sacha), card and /portfolio, with "Online Soon" after its Volkstraat line on the landing card and in its /portfolio write-up (soon: true in app/content.ts).
 - 2026-10-15: The landing page work section shows only Ta-nnin and 58 Diamonds (work.home in app/content.ts); all five stay on /portfolio. Ta-nnin is described as a wine bar on Volkstraat in Antwerp, with no link and no mention of a temporary address; its card and its /portfolio write-up end with "Online Soon". The work heading, on the landing and /portfolio, reads "A few of the houses we have dressed.", and the landing intro reads "These are some of the projects our founders have led." "Est. 2026" removed from the hero. The "All work" link under the landing work section is now "Portfolio", styled like the header link (orange on hover).
 - 2026-10-15: On phones every /portfolio project shows its picture first, then the text. The desktop rule that swaps sides on every second project was still winning on phones, so those projects showed text first.
+- 2026-10-15: More space on phones (Sacha found both pages loaded). Under 760px: sections 96 to 136px apart, a hairline between the four pillars and between /portfolio projects, more room inside and between cards, rows and lists. Desktop unchanged.
 
 ## Open items
 
