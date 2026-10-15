@@ -152,6 +152,19 @@ export const work = {
       domain: "18sitters.com",
       image: "/work/18-sitters.jpg",
     },
+    {
+      name: "Mezze House",
+      label: "Restaurant concept",
+      body: "A Lebanese table in Hoboken, New Jersey: a concept site with live booking, and the system behind it.",
+      about: [
+        "A late night Lebanese restaurant, imagined end to end. A dark, candlelit site with the menu, the wine and the room, and a table booked in a few taps.",
+        "Behind it sits the proposal we put to restaurant owners: menu, floor plan, hours and ordering entered once and used everywhere, from the website to the printed cards. The name, address and photos are placeholders.",
+      ],
+      role: "Concept, website, booking",
+      url: "https://mezzehouse.netlify.app",
+      domain: "mezzehouse.netlify.app",
+      image: "/work/mezze-house.jpg",
+    },
   ],
 };
 
