@@ -1,4 +1,4 @@
-import { nav, site, work } from "./content";
+import { footer, nav, site, work } from "./content";
 import { Monogram } from "./logo";
 
 // Header and footer shared by every page.
@@ -22,10 +22,20 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
     <footer className="footer">
-      <span>
-        © {year} {site.name}
+      <span className="footer-brand">
+        <span>©&nbsp;{year}</span>
+        <span className="footer-logo">
+          <Monogram className="mark" />
+          <span className="visually-hidden">18 </span>
+          Forge
+        </span>
       </span>
-      <a className="text-link" href={`mailto:${site.contactEmail}`}>
+      <a className="footer-credit" href="/">
+        {footer.credit}
+        <Monogram className="mark" />
+        <span className="visually-hidden">18</span>
+      </a>
+      <a className="text-link footer-email" href={`mailto:${site.contactEmail}`}>
         {site.contactEmail}
       </a>
     </footer>
