@@ -10,7 +10,6 @@ export const site = {
 
 export const hero = {
   eyebrow: "Independent creative company",
-  founded: "Est. 2026",
   disciplines: "Strategy / Creative / Technology / Experiences",
   headline: "We make people want things.",
   headlineAccent: "Then we make them easy to buy.",
@@ -94,9 +93,8 @@ export const work = {
   id: "work",
   path: "/portfolio",
   kicker: "Selected work",
-  title: "A few houses we have dressed.",
-  intro:
-    "18 Forge is new, so these are projects our founders have led. More will follow; the rest is kept in confidence.",
+  title: "A few of the houses we have dressed.",
+  intro: "These are some of the projects our founders have led.",
   more: "All work",
   // Projects without a live address yet show this instead of a link.
   soon: "Online Soon",
@@ -173,7 +171,6 @@ export const work = {
 // The /portfolio page.
 export const workPage = {
   title: "Selected work",
-  heading: "A few of the houses we have dressed.",
   intro:
     "Brands, websites and systems made by the people behind 18 Forge. Each one links to the real thing.",
   role: "What we did",

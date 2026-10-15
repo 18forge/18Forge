@@ -13,7 +13,7 @@ import {
 // so the two never drift apart.
 const facts = [
   `Name: ${site.name}. Contact: ${site.contactEmail}.`,
-  `${hero.eyebrow}, ${hero.founded.toLowerCase()}. Disciplines: ${hero.disciplines}.`,
+  `${hero.eyebrow}. Disciplines: ${hero.disciplines}.`,
   `${hero.headline} ${hero.headlineAccent}`,
   hero.subhead,
   "",

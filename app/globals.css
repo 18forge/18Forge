@@ -839,8 +839,6 @@ body:has(.chat) .footer { padding-bottom: calc(2 * 48px + 12px + 2 * var(--gutte
 @media (max-width: 760px) {
   :root { --gutter: 16px; }
   .hero { padding: 56px var(--gutter) 88px; }
-  .kicker-sep { display: none; }
-  .kicker-founded { display: block; margin-top: 6px; }
   .hero-mark { width: 88vw; right: -30%; top: 24px; }
   .section { padding-top: 96px; }
   .menu { margin-top: 96px; padding: 80px var(--gutter); }

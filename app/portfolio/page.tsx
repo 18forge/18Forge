@@ -19,7 +19,7 @@ export default function WorkPage() {
       <main id="top">
         <section className="section work-page">
           <p className="kicker">{work.kicker}</p>
-          <h1>{workPage.heading}</h1>
+          <h1>{work.title}</h1>
           <p className="lede">{workPage.intro}</p>
           <div className="case-list">
             {work.items.map((item) => (

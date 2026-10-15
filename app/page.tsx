@@ -29,11 +29,7 @@ export default function Home() {
         <section className="hero">
           <Monogram className="hero-mark" />
           <div className="hero-copy">
-            <p className="kicker">
-              {hero.eyebrow}
-              <span className="kicker-sep" aria-hidden="true"> · </span>
-              <span className="kicker-founded">{hero.founded}</span>
-            </p>
+            <p className="kicker">{hero.eyebrow}</p>
             <p className="disciplines">{hero.disciplines}</p>
             <h1>
               {hero.headline}
