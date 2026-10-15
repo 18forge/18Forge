@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { closing, footer, site, work, workPage } from "../content";
 import { BackToTop } from "../back-to-top";
-import { SiteFooter, SiteHeader, WorkCard } from "../site-chrome";
+import { SiteFooter, SiteHeader, WorkShot } from "../site-chrome";
 
 export const metadata: Metadata = {
   title: `${workPage.title} | ${site.title}`,
@@ -20,9 +20,28 @@ export default function WorkPage() {
           <p className="kicker">{work.kicker}</p>
           <h1>{work.title}</h1>
           <p className="lede">{workPage.intro}</p>
-          <div className="work-grid">
+          <div className="case-list">
             {work.items.map((item) => (
-              <WorkCard key={item.name} item={item} />
+              <article key={item.name} className="case">
+                <a href={item.url} target="_blank" rel="noopener" tabIndex={-1}>
+                  <WorkShot item={item} />
+                </a>
+                <div className="case-copy">
+                  <p className="work-label">{item.label}</p>
+                  <h2>{item.name}</h2>
+                  {item.about.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                  <p className="case-role">
+                    <span>{workPage.role}</span>
+                    {item.role}
+                  </p>
+                  <a className="text-link" href={item.url} target="_blank" rel="noopener">
+                    {workPage.visit}
+                    <span aria-hidden="true"> ↗</span>
+                  </a>
+                </div>
+              </article>
             ))}
           </div>
         </section>

@@ -34,10 +34,26 @@ export function SiteFooter() {
 
 type WorkItem = (typeof work.items)[number];
 
+// A screenshot of the site, framed like a browser window.
+export function WorkShot({ item }: { item: WorkItem }) {
+  return (
+    <span className="work-shot">
+      <img
+        src={item.image}
+        alt={`The ${item.name} website`}
+        width={1600}
+        height={1000}
+        loading="lazy"
+      />
+    </span>
+  );
+}
+
 // One project: the whole card links to the live site.
 export function WorkCard({ item }: { item: WorkItem }) {
   return (
     <a className="work-item" href={item.url} target="_blank" rel="noopener">
+      <WorkShot item={item} />
       <p className="work-label">{item.label}</p>
       <h3>{item.name}</h3>
       <p>{item.body}</p>

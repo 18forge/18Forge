@@ -98,27 +98,45 @@ export const work = {
   intro:
     "18 Forge is new, so these are projects our founders have led. More will follow; the rest is kept in confidence.",
   more: "All work",
+  // image: a screenshot of the site in public/work, 1600 x 1000 pixels.
   items: [
     {
       name: "Ta-nnin",
       label: "Website, in preview",
       body: "A new site, shown here before its launch. The address is temporary; the name is not.",
+      about: [
+        "A new name, given its first home online. The site is in preview while the rest of the house gets ready to open.",
+      ],
+      role: "Website",
       url: "https://tannin-web.vercel.app/",
       domain: "tannin-web.vercel.app",
+      image: "/work/tannin.jpg",
     },
     {
       name: "Eighteen Diamonds",
       label: "Website",
       body: "Diamonds, fine jewellery and watches from New York's Diamond District.",
+      about: [
+        "A wholesale house on West 47th Street: loose diamonds, fine jewellery, luxury and vintage watches, and estate pieces bought and sold.",
+        "The site had to feel as considered as the stones. It presents the collection, the buying service and special orders, and turns a visit into a phone call or an appointment.",
+      ],
+      role: "Brand, website",
       url: "https://eighteendiamonds.com",
       domain: "eighteendiamonds.com",
+      image: "/work/eighteen-diamonds.jpg",
     },
     {
       name: "58 Diamonds",
       label: "Website",
       body: "Diamonds and fine jewellery, presented online with the same care as in the salon.",
+      about: [
+        "Named for the 58 facets of a brilliant cut. A jewellery house with its collection online, shown with the same care as in the salon.",
+        "Built with a back office the client runs themselves, so new pieces go live without calling anyone.",
+      ],
+      role: "Website, back office",
       url: "https://58diamonds.com",
       domain: "58diamonds.com",
+      image: "/work/58-diamonds.jpg",
     },
   ],
 };
@@ -128,6 +146,8 @@ export const workPage = {
   title: "Selected work",
   intro:
     "Brands, websites and systems made by the people behind 18 Forge. Each one links to the real thing.",
+  role: "What we did",
+  visit: "Visit the site",
   closingTitle: "Yours could be next.",
 };
 
