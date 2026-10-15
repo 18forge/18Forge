@@ -35,9 +35,10 @@
 - 2026-10-15: The work page moved to /portfolio (the old /work address redirects there) and the header link now reads "Portfolio", since "Work" read like a jobs link. The assistant shows on the portfolio page too.
 - 2026-10-15: Mezze House added to the portfolio: a restaurant concept (site, live booking and the proposal behind it) at mezzehouse.netlify.app, with placeholder name, address and photos.
 - 2026-10-15: Footer shows the logo (orange 18 and Forge) after the year, "Forged by" with the 18 mark in the centre (grey, orange on hover, as on Eighteen Diamonds) and the email on the right. On phones the three lines stack, centred.
+- 2026-10-15: Ta-nnin links to tannin-web.vercel.app again (Sacha), card and /portfolio, with "Online Soon" after its Volkstraat line on the landing card and in its /portfolio write-up (soon: true in app/content.ts).
 - 2026-10-15: The landing page work section shows only Ta-nnin and 58 Diamonds (work.home in app/content.ts); all five stay on /portfolio. Ta-nnin is described as a wine bar on Volkstraat in Antwerp, with no link and no mention of a temporary address; its card and its /portfolio write-up end with "Online Soon". The work heading, on the landing and /portfolio, reads "A few of the houses we have dressed.", and the landing intro reads "These are some of the projects our founders have led." "Est. 2026" removed from the hero. The "All work" link under the landing work section is now "Portfolio", styled like the header link (orange on hover).
 
 ## Open items
 
-- Selected work: when ta-nnin.be launches, add its url and domain back to the Ta-nnin entry in app/content.ts (the "Online Soon" line then disappears on its own). Write-ups come from each project's own notes; screenshots are in public/work.
+- Selected work: when ta-nnin.be launches, swap the Ta-nnin url and domain in app/content.ts and drop soon: true. Write-ups come from each project's own notes; screenshots are in public/work.
 - Assistant: Sacha to choose the model and add ANTHROPIC_API_KEY (and ASSISTANT_MODEL if not the default) on Production in Vercel, then redeploy.

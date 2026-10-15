@@ -454,6 +454,8 @@ a.work-item:hover { border-color: var(--accent); background: var(--surface); }
 
 .work-item > p:not(.work-label) { margin: 10px 0 0; color: var(--muted); }
 
+.work-soon { color: var(--accent); }
+
 .work-domain {
   margin-top: auto;
   padding-top: 24px;
@@ -461,7 +463,9 @@ a.work-item:hover { border-color: var(--accent); background: var(--surface); }
   font-size: 0.875rem;
   overflow-wrap: anywhere;
 }
-a.work-item:hover .work-domain { color: var(--accent); }
+a.work-item:hover .work-soon { color: var(--accent); }
+
+.work-domain { color: var(--accent); }
 
 .work-more { display: inline-block; margin-top: 32px; }
 
