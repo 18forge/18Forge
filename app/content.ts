@@ -118,9 +118,9 @@ export const work = {
       body: "Diamonds, fine jewellery and watches from New York's Diamond District.",
       about: [
         "A wholesale house on West 47th Street: loose diamonds, fine jewellery, luxury and vintage watches, and estate pieces bought and sold.",
-        "The site had to feel as considered as the stones. It presents the collection, the buying service and special orders, and turns a visit into a phone call or an appointment.",
+        "The site presents the collection, the buying service and special orders, and turns a visit into a phone call.",
       ],
-      role: "Brand, website",
+      role: "Website",
       url: "https://eighteendiamonds.com",
       domain: "eighteendiamonds.com",
       image: "/work/eighteen-diamonds.jpg",
@@ -128,12 +128,12 @@ export const work = {
     {
       name: "58 Diamonds",
       label: "Website",
-      body: "Diamonds and fine jewellery, presented online with the same care as in the salon.",
+      body: "Fine jewellery by Farah, in Antwerp and by appointment.",
       about: [
-        "Named for the 58 facets of a brilliant cut. A jewellery house with its collection online, shown with the same care as in the salon.",
-        "Built with a back office the client runs themselves, so new pieces go live without calling anyone.",
+        "Rings, necklaces, earrings and bracelets, made by Farah and shown by appointment in Antwerp. The site presents the collection in English, Dutch and French, with a WhatsApp line and viewing requests on every piece.",
+        "Behind it sits an admin Farah runs herself: pieces, photos, pages, events and translations. A full shop with checkout and EU VAT is built in, ready to switch on.",
       ],
-      role: "Website, back office",
+      role: "Website, admin, shop",
       url: "https://58diamonds.com",
       domain: "58diamonds.com",
       image: "/work/58-diamonds.jpg",
