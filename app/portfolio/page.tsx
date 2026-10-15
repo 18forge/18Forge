@@ -37,7 +37,7 @@ export default function WorkPage() {
                   {item.about.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
                   ))}
-                  {!item.url && <p className="case-soon">{work.soon}</p>}
+                  {item.soon && <p className="case-soon">{work.soon}</p>}
                   <p className="case-role">
                     <span>{workPage.role}</span>
                     {item.role}

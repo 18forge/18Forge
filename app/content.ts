@@ -95,7 +95,7 @@ export const work = {
   kicker: "Selected work",
   title: "A few of the houses we have dressed.",
   intro: "These are some of the projects our founders have led.",
-  // Projects without a live address yet show this instead of a link.
+  // Shown on projects marked soon, before their own address is live.
   soon: "Online Soon",
   // The landing page shows only these, in this order.
   home: ["Ta-nnin", "58 Diamonds"],
@@ -110,6 +110,9 @@ export const work = {
         "The menu, wine list, bar list and events come from an admin the team runs themselves, and tables are booked in one tap. Behind it sits a full reservation system of our own, ready for the next venue.",
       ],
       role: "Website, admin",
+      soon: true,
+      url: "https://tannin-web.vercel.app/",
+      domain: "tannin-web.vercel.app",
       image: "/work/tannin.jpg",
     },
     {
