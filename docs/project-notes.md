@@ -2,7 +2,7 @@
 
 ## What it is
 
-18 Forge. A single landing page for the agency, contact agency@18forge.com.
+18 Forge. The agency's website, contact agency@18forge.com. Five destinations: Home, Portfolio (/portfolio), Expertise, About and Contact.
 
 ## Stack
 
@@ -39,6 +39,10 @@
 - 2026-10-15: The landing page work section shows only Ta-nnin and 58 Diamonds (work.home in app/content.ts); all five stay on /portfolio. Ta-nnin is described as a wine bar on Volkstraat in Antwerp, with no link and no mention of a temporary address; its card and its /portfolio write-up end with "Online Soon". The work heading, on the landing and /portfolio, reads "A few of the houses we have dressed.", and the landing intro reads "These are some of the projects our founders have led." "Est. 2026" removed from the hero. The "All work" link under the landing work section is now "Portfolio", styled like the header link (orange on hover).
 - 2026-10-15: On phones every /portfolio project shows its picture first, then the text. The desktop rule that swaps sides on every second project was still winning on phones, so those projects showed text first.
 - 2026-10-15: More space on phones (Sacha found both pages loaded). Under 760px: sections 96 to 136px apart, a hairline between the four pillars and between /portfolio projects, more room inside and between cards, rows and lists. Desktop unchanged.
+- 2026-10-16: Redesign from Sacha's restructuring brief. Shared header with Portfolio, Expertise, About and Contact (a full screen menu on phones), and a shorter landing page: hero, selected work right after it, the four disciplines in brief, and a contact close built around the email address. "Everything under one roof" and the AI clockwork section moved to /expertise, "Who we work for" to /about (an editorial list with links to matching projects). New /contact page with the address, a mail button and a copy button; no form. /portfolio keeps all five projects with alternating layouts, status, role and expertise for each, and Mezze House under "Independent concepts", labelled as uncommissioned. Square edged buttons and hairline underlined links replace the pill buttons and small arrows. The nav keeps "Portfolio" rather than "Work" (2026-10-15 decision). Fonts and palette unchanged. sitemap.xml added.
+- 2026-10-16: Redesign second pass after Sacha saw the preview: headings and the contact email scaled well down, and copy softened to stay confident and classy without sounding like a know-it-all (About title now "Independent, and close to the work.", concepts heading "Proposals of our own.").
+- 2026-10-16: "Tell us what you are working on." now appears once, on /contact (Sacha). The other pages end with their own short line and the email only.
+- 2026-10-16: Final pass before merge (Sacha). The /contact page is gone (contact is already on every page); /contact redirects home in vercel.json and the nav has Portfolio, Expertise and About. "Tell us what you are working on." now closes the home page only. Every /portfolio picture is the same size, alternating sides. The assistant and back to top stay on every page through SiteShell.
 
 ## Open items
 
