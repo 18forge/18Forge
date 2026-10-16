@@ -255,7 +255,7 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
   position: relative;
   max-width: var(--max);
   margin: 0 auto;
-  padding: 112px var(--gutter) 144px;
+  padding: 104px var(--gutter) 128px;
 }
 
 .hero-mark {
@@ -263,17 +263,17 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
   z-index: -1;
   right: calc(var(--gutter) - 4%);
   top: 72px;
-  width: min(50vw, 600px);
+  width: min(40vw, 480px);
   height: auto;
   color: var(--hero-mark);
 }
 
-.hero-copy { position: relative; max-width: 860px; }
+.hero-copy { position: relative; max-width: 640px; }
 
 .hero h1 {
-  font-size: clamp(2.7rem, 7.2vw, 6.25rem);
-  line-height: 1;
-  letter-spacing: -0.025em;
+  font-size: clamp(2.3rem, 4.8vw, 4.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
 }
 
 .hero-line { display: block; }
@@ -283,7 +283,7 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
   max-width: 30rem;
   margin-top: 40px;
   color: var(--muted);
-  font-size: 1.1875rem;
+  font-size: 1.125rem;
   line-height: 1.6;
 }
 
@@ -350,11 +350,11 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
   display: grid;
   grid-template-columns: 3fr 9fr;
   column-gap: 32px;
-  margin-bottom: 88px;
+  margin-bottom: 72px;
 }
 .section-head .kicker { grid-row: 1 / span 2; padding-top: 0.9em; }
 .section-head h2 {
-  font-size: clamp(2.1rem, 4.4vw, 3.75rem);
+  font-size: clamp(1.75rem, 3vw, 2.6rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
   max-width: 16ch;
@@ -427,8 +427,8 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
 .feature-meta { color: var(--muted); }
 .feature-name {
   font-family: var(--serif);
-  font-size: clamp(2rem, 3.2vw, 2.75rem);
-  line-height: 1.05;
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
+  line-height: 1.1;
   letter-spacing: -0.015em;
   font-variant-numeric: lining-nums;
   transition: color 0.2s ease;
@@ -460,11 +460,11 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
   transition: background 0.3s ease;
 }
 .discipline-row li:first-child .discipline-cell { padding-left: 0; }
-.discipline-cell .numeral { font-size: 3rem; margin-bottom: 28px; }
+.discipline-cell .numeral { font-size: 1.25rem; margin-bottom: 20px; }
 .discipline-title {
   font-family: var(--serif);
-  font-size: 1.875rem;
-  line-height: 1.1;
+  font-size: 1.5rem;
+  line-height: 1.15;
   transition: color 0.2s ease;
 }
 .discipline-summary { color: var(--muted); }
@@ -479,10 +479,10 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
   border-top: 1px solid var(--border);
 }
 .closing h2 {
-  font-size: clamp(2.6rem, 6.6vw, 5.75rem);
-  line-height: 1;
-  letter-spacing: -0.025em;
-  max-width: 13ch;
+  font-size: clamp(1.9rem, 3.4vw, 2.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  max-width: 18ch;
 }
 .closing-body {
   max-width: 32rem;
@@ -491,16 +491,15 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
 }
 .closing-email, .contact-email {
   display: inline-block;
-  margin-top: 56px;
-  font-family: var(--serif);
-  font-size: clamp(1.75rem, 4.6vw, 3.5rem);
-  line-height: 1.15;
-  letter-spacing: -0.01em;
+  margin-top: 36px;
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.4;
   color: var(--text);
   text-decoration: none;
   overflow-wrap: anywhere;
-  background: linear-gradient(var(--accent), var(--accent)) left bottom / 100% 2px no-repeat;
-  padding-bottom: 6px;
+  background: linear-gradient(var(--accent), var(--accent)) left bottom / 100% 1px no-repeat;
+  padding-bottom: 4px;
   transition: color 0.2s ease;
 }
 .closing-email:hover, .contact-email:hover { color: var(--accent); }
@@ -513,16 +512,16 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
   padding: 128px var(--gutter) 0;
 }
 .page-head h1 {
-  font-size: clamp(2.6rem, 6.8vw, 5.75rem);
-  line-height: 1;
-  letter-spacing: -0.025em;
-  max-width: 15ch;
+  font-size: clamp(2.1rem, 4.2vw, 3.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  max-width: 18ch;
 }
 .page-intro {
   max-width: 36rem;
   margin-top: 40px;
   color: var(--muted);
-  font-size: 1.1875rem;
+  font-size: 1.125rem;
 }
 .page-head + .section { padding-top: 136px; }
 
@@ -569,7 +568,7 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
 }
 .case-label { margin-bottom: 12px; color: var(--muted); }
 .case-head h2 {
-  font-size: clamp(2.1rem, 3.6vw, 3.25rem);
+  font-size: clamp(1.75rem, 2.6vw, 2.4rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
 }
@@ -605,15 +604,15 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
 .discipline-head { grid-column: 1 / span 5; }
 .discipline-head .numeral { font-size: 1.25rem; margin-bottom: 28px; }
 .discipline-head h2 {
-  font-size: clamp(2.6rem, 5.2vw, 4.5rem);
-  line-height: 1;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  line-height: 1.05;
   letter-spacing: -0.025em;
 }
 .discipline-lede {
   margin-top: 28px;
   font-family: var(--serif);
-  font-size: 1.375rem;
-  line-height: 1.35;
+  font-size: 1.1875rem;
+  line-height: 1.4;
 }
 .discipline-body { margin-top: 16px; color: var(--muted); max-width: 26rem; }
 .discipline-work { margin-top: 28px; font-size: 0.9375rem; }
@@ -635,7 +634,7 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
   border-top: 1px solid var(--border);
 }
 .capabilities li:last-child { border-bottom: 1px solid var(--border); }
-.capability-name { font-family: var(--serif); font-size: 1.375rem; line-height: 1.2; }
+.capability-name { font-family: var(--serif); font-size: 1.1875rem; line-height: 1.25; }
 .capability-note { color: var(--muted); font-size: 0.9375rem; }
 
 /* The clockwork moment, under Build. */
@@ -651,7 +650,7 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
 }
 .clockwork .kicker { color: var(--paper-muted); }
 .clockwork h3 {
-  font-size: clamp(2rem, 3.6vw, 3rem);
+  font-size: clamp(1.6rem, 2.6vw, 2.25rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
 }
@@ -697,7 +696,7 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
 }
 .principle-list li:last-child { border-bottom: 1px solid var(--border); }
 .principle-index { color: var(--accent); font-family: var(--serif); font-size: 1.125rem; }
-.principle-list h3 { font-size: 1.875rem; line-height: 1.15; }
+.principle-list h3 { font-size: 1.5rem; line-height: 1.2; }
 .principle-list p { color: var(--muted); max-width: 34rem; }
 
 .audience-list {
@@ -715,8 +714,8 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
 }
 .audience h3 {
   grid-column: 1 / span 6;
-  font-size: clamp(2.25rem, 4.6vw, 4rem);
-  line-height: 1;
+  font-size: clamp(1.6rem, 2.6vw, 2.25rem);
+  line-height: 1.1;
   letter-spacing: -0.02em;
 }
 .audience > div { grid-column: 7 / span 6; }
@@ -729,9 +728,9 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
   border-top: 1px solid var(--border);
   color: var(--accent);
   font-family: var(--serif);
-  font-size: clamp(1.75rem, 3.6vw, 2.75rem);
-  line-height: 1.15;
-  letter-spacing: -0.01em;
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  line-height: 1.25;
+  letter-spacing: -0.005em;
 }
 
 /* Contact */
@@ -742,12 +741,12 @@ html[data-menu="open"] .site-header::before { background: var(--ink); }
   padding: 128px var(--gutter) 168px;
 }
 .contact h1 {
-  font-size: clamp(2.6rem, 6.8vw, 5.75rem);
-  line-height: 1;
-  letter-spacing: -0.025em;
-  max-width: 13ch;
+  font-size: clamp(2.1rem, 4.2vw, 3.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  max-width: 18ch;
 }
-.contact-email { margin-top: 64px; font-size: clamp(2rem, 7vw, 5rem); }
+.contact-email { margin-top: 44px; font-family: var(--serif); font-size: clamp(1.35rem, 2.2vw, 1.75rem); }
 .contact-actions {
   margin-top: 48px;
   display: flex;
@@ -1123,9 +1122,9 @@ html[data-menu="open"] .back-to-top { visibility: hidden; }
     gap: 18px;
     padding: 16px 0;
     font-family: var(--serif);
-    font-size: 2.5rem;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
+    font-size: 1.875rem;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
     text-decoration: none;
   }
   .menu-list a[aria-current="page"] { color: var(--accent); }
@@ -1146,8 +1145,8 @@ html[data-menu="open"] .back-to-top { visibility: hidden; }
 
   /* Hero: the headline owns the first screen. */
   .hero { padding: 56px var(--gutter) 72px; }
-  .hero-mark { width: 104vw; right: -46%; top: 12px; }
-  .hero h1 { font-size: clamp(2.6rem, 11.4vw, 3.4rem); line-height: 1.02; }
+  .hero-mark { width: 86vw; right: -40%; top: 16px; }
+  .hero h1 { font-size: clamp(2.1rem, 9vw, 2.6rem); line-height: 1.08; }
   .hero-accent { margin-top: 0.12em; }
   .hero-lede { margin-top: 28px; font-size: 1.0625rem; }
   .actions { margin-top: 40px; gap: 8px 32px; }
@@ -1155,7 +1154,7 @@ html[data-menu="open"] .back-to-top { visibility: hidden; }
 
   .section-head { display: block; margin-bottom: 56px; }
   .section-head .kicker { padding-top: 0; }
-  .section-head h2 { font-size: clamp(2.1rem, 9.4vw, 2.6rem); }
+  .section-head h2 { font-size: clamp(1.6rem, 7vw, 1.9rem); }
   .section-intro { margin-top: 20px; }
   .section-more { margin-top: 40px; }
 
@@ -1175,7 +1174,7 @@ html[data-menu="open"] .back-to-top { visibility: hidden; }
   }
   .feature-copy > * { grid-column: 2; }
   .feature-index { grid-column: 1; grid-row: 1 / span 3; margin: 0; font-size: 1rem; line-height: 2; }
-  .feature-name { font-size: 2rem; }
+  .feature-name { font-size: 1.6rem; }
 
   .discipline-row { display: block; }
   .discipline-row li + li { border-left: 0; }
@@ -1191,15 +1190,15 @@ html[data-menu="open"] .back-to-top { visibility: hidden; }
   }
   .discipline-cell > * { grid-column: 2; }
   .discipline-cell .numeral { grid-column: 1; grid-row: 1 / span 2; margin: 0; font-size: 1rem; line-height: 2; }
-  .discipline-title { font-size: 1.625rem; }
+  .discipline-title { font-size: 1.375rem; }
 
   .closing { padding: 96px var(--gutter) 120px; }
-  .closing h2 { font-size: clamp(2.5rem, 11vw, 3.25rem); }
+  .closing h2 { font-size: clamp(1.6rem, 7vw, 1.9rem); }
   .closing-body { margin-top: 28px; }
-  .closing-email { margin-top: 44px; font-size: clamp(1.6rem, 7.6vw, 2.2rem); }
+  .closing-email { margin-top: 28px; }
 
   .page-head { padding-top: 64px; }
-  .page-head h1 { font-size: clamp(2.6rem, 11.4vw, 3.4rem); line-height: 1.02; }
+  .page-head h1 { font-size: clamp(1.9rem, 8.4vw, 2.3rem); line-height: 1.1; }
   .page-intro { margin-top: 28px; font-size: 1.0625rem; }
   .page-head + .section { padding-top: 88px; }
 
@@ -1208,7 +1207,7 @@ html[data-menu="open"] .back-to-top { visibility: hidden; }
   .case-copy, .case-wide .case-copy { display: block; margin-top: 28px; }
   .case-wide .case-head { margin-bottom: 0; }
   .case-text, .case-split .case-text { margin-top: 24px; }
-  .case-head h2 { font-size: 2.25rem; }
+  .case-head h2 { font-size: 1.75rem; }
   .case-index { margin-bottom: 14px; font-size: 1rem; }
   .case-facts, .case-wide .case-facts {
     margin-top: 32px;
@@ -1218,18 +1217,18 @@ html[data-menu="open"] .back-to-top { visibility: hidden; }
   .concepts .case-list { gap: 96px; }
 
   .discipline { display: block; padding: 56px 0 72px; }
-  .discipline-head h2 { font-size: clamp(2.6rem, 12vw, 3.25rem); }
-  .discipline-lede { margin-top: 20px; font-size: 1.25rem; }
+  .discipline-head h2 { font-size: 2.1rem; }
+  .discipline-lede { margin-top: 16px; font-size: 1.125rem; }
   .capabilities { margin-top: 40px; }
   .capabilities li { grid-template-columns: 1fr; padding: 18px 0; }
-  .capability-name { font-size: 1.25rem; }
+  .capability-name { font-size: 1.125rem; }
 
   .clockwork {
     margin: 72px calc(-1 * var(--gutter)) 0;
     padding: 64px var(--gutter);
     gap: 40px;
   }
-  .clockwork h3 { font-size: 2.2rem; }
+  .clockwork h3 { font-size: 1.6rem; }
 
   .principle-list li {
     grid-template-columns: 44px 1fr;
@@ -1238,16 +1237,16 @@ html[data-menu="open"] .back-to-top { visibility: hidden; }
   }
   .principle-list p { grid-column: 2; }
   .principle-index { font-size: 1rem; }
-  .principle-list h3 { font-size: 1.625rem; }
+  .principle-list h3 { font-size: 1.375rem; }
 
   .audience { display: block; padding: 36px 0; }
-  .audience h3 { font-size: 2.4rem; }
+  .audience h3 { font-size: 1.6rem; }
   .audience > div { margin-top: 16px; }
-  .audiences-footnote { padding-top: 40px; font-size: 1.75rem; }
+  .audiences-footnote { padding-top: 40px; font-size: 1.3rem; }
 
   .contact { padding: 64px var(--gutter) 120px; }
-  .contact h1 { font-size: clamp(2.6rem, 11.4vw, 3.4rem); line-height: 1.02; }
-  .contact-email { margin-top: 48px; font-size: clamp(1.75rem, 8.2vw, 2.4rem); }
+  .contact h1 { font-size: clamp(1.9rem, 8.4vw, 2.3rem); line-height: 1.1; }
+  .contact-email { margin-top: 32px; font-size: 1.3rem; }
   .contact-actions { margin-top: 40px; gap: 8px 32px; }
   .contact-actions .button { flex: 1 1 100%; }
   .contact-notes { margin-top: 72px; grid-template-columns: 1fr; gap: 20px; }

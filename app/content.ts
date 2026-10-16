@@ -63,7 +63,7 @@ export const disciplines = {
       body: "Identity, film, print and social, made by hand and made to sell.",
       capabilities: [
         { name: "Brand and identity", note: "Who you are, said once and said well." },
-        { name: "Creative direction", note: "One eye on everything that carries your name." },
+        { name: "Creative direction", note: "Everything that carries your name, kept in step." },
         { name: "Advertising", note: "Print, film and social campaigns." },
         { name: "Content", note: "Words, pictures and film for every channel you use." },
       ],
@@ -88,8 +88,8 @@ export const disciplines = {
       summary: "Strategy, positioning, launches and growth.",
       body: "Pricing, launches and introductions, through to the campaigns that close the sale.",
       capabilities: [
-        { name: "Positioning", note: "Where you stand, and why the buyer should care." },
-        { name: "Pricing", note: "What to charge, and how to say it." },
+        { name: "Positioning", note: "Where you stand, and how to say it." },
+        { name: "Pricing", note: "What to charge, and why." },
         { name: "Launches", note: "Openings, releases and first impressions." },
         { name: "Growth and introductions", note: "The next step, and the people who can help." },
       ],
@@ -269,9 +269,9 @@ export const workPage = {
   expertise: "Expertise",
   visit: "Visit",
   conceptsKicker: "Independent concepts",
-  conceptsTitle: "Ideas we built before anyone asked.",
+  conceptsTitle: "Proposals of our own.",
   conceptsIntro:
-    "Uncommissioned proposals, made on our own initiative to show what a place could be. Names and details are placeholders, and no client has endorsed or chosen them.",
+    "Uncommissioned ideas, made to show what a place could become. Names and details are placeholders, and no client has endorsed or chosen them.",
   conceptLabel: "Independent concept",
   closingTitle: "Yours could be next.",
 };
@@ -280,26 +280,26 @@ export const workPage = {
 export const about = {
   path: "/about",
   kicker: "About",
-  title: "Ideas are easy. Making them work is the job.",
+  title: "Independent, and close to the work.",
   intro:
-    "18 Forge is an independent creative company. We think it through, make it and see it working, with the same people from the first conversation to the last detail.",
+    "18 Forge is an independent creative company. We like to see an idea through, from the first conversation to the last detail, with the same people beside you all the way.",
   approachKicker: "How we work",
   principles: [
     {
       title: "Independent",
-      body: "No network and no house style to sell you. Just the work, and the people doing it.",
+      body: "We answer to our clients rather than to a network, so each project starts from what it needs.",
     },
     {
       title: "One point of contact",
-      body: "One person who knows the whole job answers your email, and stays with it to the end.",
+      body: "One person knows the whole project, answers your email and stays with it to the end.",
     },
     {
       title: "Hands on",
-      body: "Creative ambition and practical execution in the same room. The people who write the brief build the thing.",
+      body: "Ideas and execution sit together, so what we propose is something we can deliver.",
     },
     {
       title: "Real and working",
-      body: "From an idea to something that runs: a site that takes bookings, an app people use, a launch that happens on the day.",
+      body: "We like to finish things: a site that takes bookings, an app people use, an opening that happens on the day.",
     },
     {
       title: "Discreet",
@@ -313,7 +313,7 @@ export const about = {
 // Who we work for, on the About page. work: projects that show the fit.
 export const houses = {
   kicker: "Who we work for",
-  title: "Four kinds of client, one standard.",
+  title: "The people we tend to work with.",
   items: [
     {
       title: "Luxury houses",
