@@ -1,76 +1,112 @@
 import type { Metadata } from "next";
-import { closing, footer, site, work, workPage } from "../content";
-import { BackToTop } from "../back-to-top";
-import { Chat } from "../chat";
-import { SiteFooter, SiteHeader, WorkShot } from "../site-chrome";
+import { disciplines, expertise, site, work, workPage, type WorkItem } from "../content";
+import { Closing, SiteShell, WorkShot } from "../site-chrome";
 
 export const metadata: Metadata = {
   title: `${workPage.title} | ${site.title}`,
   description: workPage.intro,
+  alternates: { canonical: work.path },
 };
 
-export default function WorkPage() {
-  const mailto = `mailto:${site.contactEmail}`;
+const delivered = work.items.filter((item) => !item.concept);
+const concepts = work.items.filter((item) => item.concept);
+
+// Wide and split layouts take turns, so the page has a rhythm rather than
+// a grid: wide, split, split the other way, wide again.
+function layoutFor(i: number) {
+  if (i % 3 === 0) return "case-wide";
+  return i % 3 === 1 ? "case-split" : "case-split case-flip";
+}
+
+function Case({ item, index, layout }: { item: WorkItem; index: number; layout: string }) {
+  const skills = disciplines.items.filter((d) => (item.expertise as string[]).includes(d.id));
+  const status = item.concept ? workPage.conceptLabel : item.soon ? work.soon : workPage.live;
 
   return (
-    <>
-      <SiteHeader home="/" />
-
-      <main id="top">
-        <section className="section work-page">
-          <p className="kicker">{work.kicker}</p>
-          <h1>{work.title}</h1>
-          <p className="lede">{workPage.intro}</p>
-          <div className="case-list">
-            {work.items.map((item) => (
-              <article key={item.name} className="case">
-                {item.url ? (
-                  <a href={item.url} target="_blank" rel="noopener" tabIndex={-1}>
-                    <WorkShot item={item} />
+    <article id={item.slug} className={`case ${layout}`} aria-labelledby={`${item.slug}-title`}>
+      <a className="case-shot" href={item.url} target="_blank" rel="noopener" tabIndex={-1} aria-hidden="true">
+        <WorkShot item={item} eager={index === 0} />
+      </a>
+      <div className="case-copy">
+        <header className="case-head">
+          <span className="case-index" aria-hidden="true">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+          <p className="case-label">{item.label}</p>
+          <h2 id={`${item.slug}-title`}>{item.name}</h2>
+        </header>
+        <div className="case-text">
+          {item.about.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
+        <dl className="case-facts">
+          <div>
+            <dt>{workPage.role}</dt>
+            <dd>{item.role}</dd>
+          </div>
+          <div>
+            <dt>{workPage.status}</dt>
+            <dd className={item.soon || item.concept ? "accent" : undefined}>{status}</dd>
+          </div>
+          <div>
+            <dt>{workPage.expertise}</dt>
+            <dd>
+              {skills.map((skill, i) => (
+                <span key={skill.id}>
+                  {i > 0 && ", "}
+                  <a className="inline-link" href={`${expertise.path}#${skill.id}`}>
+                    {skill.title}
                   </a>
-                ) : (
-                  <WorkShot item={item} />
-                )}
-                <div className="case-copy">
-                  <p className="work-label">{item.label}</p>
-                  <h2>{item.name}</h2>
-                  {item.about.map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
-                  ))}
-                  {item.soon && <p className="case-soon">{work.soon}</p>}
-                  <p className="case-role">
-                    <span>{workPage.role}</span>
-                    {item.role}
-                  </p>
-                  {item.url && (
-                    <a className="text-link" href={item.url} target="_blank" rel="noopener">
-                      {workPage.visit}
-                      <span aria-hidden="true"> ↗</span>
-                    </a>
-                  )}
-                </div>
-              </article>
+                </span>
+              ))}
+            </dd>
+          </div>
+          <div>
+            <dt>{workPage.visit}</dt>
+            <dd>
+              <a className="inline-link" href={item.url} target="_blank" rel="noopener">
+                {item.domain}
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </article>
+  );
+}
+
+export default function WorkPage() {
+  return (
+    <SiteShell>
+      <section className="page-head" aria-labelledby="page-title">
+        <p className="kicker">{work.kicker}</p>
+        <h1 id="page-title">{work.title}</h1>
+        <p className="page-intro">{workPage.intro}</p>
+      </section>
+
+      <div className="section case-list">
+        {delivered.map((item, i) => (
+          <Case key={item.slug} item={item} index={i} layout={layoutFor(i)} />
+        ))}
+      </div>
+
+      {concepts.length > 0 && (
+        <section className="section concepts" aria-labelledby="concepts-title">
+          <header className="section-head">
+            <p className="kicker">{workPage.conceptsKicker}</p>
+            <h2 id="concepts-title">{workPage.conceptsTitle}</h2>
+            <p className="section-intro">{workPage.conceptsIntro}</p>
+          </header>
+          <div className="case-list">
+            {concepts.map((item, i) => (
+              <Case key={item.slug} item={item} index={delivered.length + i} layout="case-wide" />
             ))}
           </div>
         </section>
+      )}
 
-        <section className="section closing">
-          <p className="kicker">{closing.kicker}</p>
-          <h2>{workPage.closingTitle}</h2>
-          <p className="lede">{closing.body}</p>
-          <a className="button" href={mailto}>
-            {closing.cta}
-          </a>
-          <a className="text-link" href={mailto}>
-            {site.contactEmail}
-          </a>
-        </section>
-      </main>
-
-      <SiteFooter />
-      <BackToTop label={footer.backToTop} />
-      {/* The assistant only appears once its API key is set on the host. */}
-      {process.env.ANTHROPIC_API_KEY && <Chat />}
-    </>
+      <Closing title={workPage.closingTitle} />
+    </SiteShell>
   );
 }

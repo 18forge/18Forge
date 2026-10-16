@@ -1,15 +1,17 @@
 import {
-  capabilities,
+  about,
   closing,
+  disciplines,
+  expertise,
   hero,
   houses,
   machinery,
-  services,
   site,
   work,
+  workPage,
 } from "../../content";
 
-// The assistant's instructions, built from the same text as the landing page
+// The assistant's instructions, built from the same text as the site
 // so the two never drift apart.
 const facts = [
   `Name: ${site.name}. Contact: ${site.contactEmail}.`,
@@ -17,18 +19,23 @@ const facts = [
   `${hero.headline} ${hero.headlineAccent}`,
   hero.subhead,
   "",
-  `${services.title} ${services.intro}`,
-  ...services.pillars.map((p) => `- ${p.title}: ${p.body}`),
+  `${about.title} ${about.intro}`,
+  ...about.principles.map((p) => `- ${p.title}: ${p.body}`),
   "",
-  `${capabilities.title}`,
-  ...capabilities.items.map((c) => `- ${c.name}: ${c.note}`),
+  `${expertise.title} ${expertise.intro}`,
+  `${disciplines.title} ${disciplines.intro}`,
+  ...disciplines.items.map(
+    (d) =>
+      `- ${d.title}: ${d.summary} ${d.body} Includes: ${d.capabilities.map((c) => `${c.name} (${c.note})`).join("; ")}.`,
+  ),
   "",
-  `${machinery.kicker}. ${machinery.body}`,
+  `${machinery.kicker}. ${machinery.title} ${machinery.body}`,
   ...machinery.examples.map((e) => `- ${e}`),
   "",
   `${work.kicker} (${work.intro}) Shown at ${site.title} ${work.path}:`,
   ...work.items.map(
-    (w) => `- ${w.name} (${w.label}, ${w.url ?? work.soon}): ${w.about.join(" ")} What we did: ${w.role}.`,
+    (w) =>
+      `- ${w.name} (${w.concept ? `${workPage.conceptLabel}, not client work` : w.label}, ${w.url}${w.soon ? `, ${work.soon}` : ""}): ${w.about.join(" ")} What we did: ${w.role}.`,
   ),
   "",
   `${houses.kicker}:`,
