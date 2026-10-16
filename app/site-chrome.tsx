@@ -64,12 +64,11 @@ function SiteFooter() {
 }
 
 // The invitation that ends every page but Contact.
-export function Closing({ title = closing.title }: { title?: string }) {
+export function Closing({ title }: { title: string }) {
   return (
     <section className="closing" aria-labelledby="closing-title">
       <p className="kicker">{closing.kicker}</p>
       <h2 id="closing-title">{title}</h2>
-      <p className="closing-body">{closing.body}</p>
       <a className="closing-email" href={mailto}>
         {site.contactEmail}
       </a>

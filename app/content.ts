@@ -339,9 +339,14 @@ export const houses = {
   footnote: "And anyone else with taste and a deadline.",
 };
 
+// The short invitation at the foot of each page. Its own heading on every
+// page, so no line repeats across the site; the full wording is on /contact.
 export const closing = {
   kicker: "Contact",
   title: "Tell us what you are working on.",
+  home: "We would like to hear from you.",
+  expertise: "A project in mind?",
+  about: "Shall we talk?",
   body: "Building, opening, launching or selling: one email reaches the people who will do the work. There is no charge for a first conversation.",
   cta: "Start a conversation",
 };
@@ -350,7 +355,7 @@ export const closing = {
 export const contact = {
   path: "/contact",
   kicker: "Contact",
-  title: "Tell us what you are working on.",
+  title: closing.title,
   body: closing.body,
   hint: "A few lines are enough: what you are making, when you need it, and what is already in place.",
   write: "Write to us",

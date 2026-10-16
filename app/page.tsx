@@ -1,4 +1,4 @@
-import { disciplines, expertise, hero, ticker, work } from "./content";
+import { closing, disciplines, expertise, hero, ticker, work } from "./content";
 import { Monogram } from "./logo";
 import { Closing, SiteShell, WorkShot, findWork, mailto, workHref } from "./site-chrome";
 
@@ -100,7 +100,7 @@ export default function Home() {
         </a>
       </section>
 
-      <Closing />
+      <Closing title={closing.home} />
     </SiteShell>
   );
 }

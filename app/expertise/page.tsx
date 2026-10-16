@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { disciplines, expertise, machinery, site, work } from "../content";
+import { closing, disciplines, expertise, machinery, site, work } from "../content";
 import { Closing, SiteShell, WorkLinks } from "../site-chrome";
 
 export const metadata: Metadata = {
@@ -63,7 +63,7 @@ export default function ExpertisePage() {
         })}
       </div>
 
-      <Closing />
+      <Closing title={closing.expertise} />
     </SiteShell>
   );
 }

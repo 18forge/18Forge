@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { about, houses, site } from "../content";
+import { about, closing, houses, site } from "../content";
 import { Closing, SiteShell, WorkLinks, findWork } from "../site-chrome";
 
 export const metadata: Metadata = {
@@ -60,7 +60,7 @@ export default function AboutPage() {
         <p className="audiences-footnote">{houses.footnote}</p>
       </section>
 
-      <Closing />
+      <Closing title={closing.about} />
     </SiteShell>
   );
 }
