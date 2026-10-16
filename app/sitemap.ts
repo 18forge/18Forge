@@ -1,8 +1,8 @@
 import type { MetadataRoute } from "next";
-import { about, contact, expertise, nav, site, work } from "./content";
+import { about, expertise, nav, site, work } from "./content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [nav.home.href, work.path, expertise.path, about.path, contact.path].map((path) => ({
+  return [nav.home.href, work.path, expertise.path, about.path].map((path) => ({
     url: `${site.url}${path === "/" ? "" : path}`,
   }));
 }

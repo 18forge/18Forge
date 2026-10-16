@@ -9,15 +9,14 @@ export const site = {
   contactEmail: "agency@18forge.com",
 };
 
-// The five destinations. Home is the logo on wide screens and the first
-// line of the menu on phones.
+// The destinations. Home is the logo on wide screens and the first line
+// of the menu on phones. Contact sits at the foot of every page.
 export const nav = {
   home: { label: "Home", href: "/" },
   items: [
     { label: "Portfolio", href: "/portfolio" },
     { label: "Expertise", href: "/expertise" },
     { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
   ],
   open: "Menu",
   close: "Close",
@@ -339,29 +338,17 @@ export const houses = {
   footnote: "And anyone else with taste and a deadline.",
 };
 
-// The short invitation at the foot of each page. Its own heading on every
-// page, so no line repeats across the site; the full wording is on /contact.
+// The short invitation at the foot of each page. Each page has its own
+// heading, so no line repeats across the site; the landing page also
+// carries the longer note.
 export const closing = {
   kicker: "Contact",
   title: "Tell us what you are working on.",
-  home: "We would like to hear from you.",
+  home: "Tell us what you are working on.",
   expertise: "A project in mind?",
   about: "Shall we talk?",
   body: "Building, opening, launching or selling: one email reaches the people who will do the work. There is no charge for a first conversation.",
   cta: "Start a conversation",
-};
-
-// The /contact page.
-export const contact = {
-  path: "/contact",
-  kicker: "Contact",
-  title: closing.title,
-  body: closing.body,
-  hint: "A few lines are enough: what you are making, when you need it, and what is already in place.",
-  write: "Write to us",
-  copy: "Copy address",
-  copied: "Copied",
-  metaDescription: "Start a conversation with 18 Forge at agency@18forge.com.",
 };
 
 export const footer = {

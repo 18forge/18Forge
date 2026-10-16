@@ -13,6 +13,11 @@
       "source": "/work",
       "destination": "/portfolio",
       "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/",
+      "permanent": false
     }
   ]
 }

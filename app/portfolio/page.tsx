@@ -11,11 +11,9 @@ export const metadata: Metadata = {
 const delivered = work.items.filter((item) => !item.concept);
 const concepts = work.items.filter((item) => item.concept);
 
-// Wide and split layouts take turns, so the page has a rhythm rather than
-// a grid: wide, split, split the other way, wide again.
+// Every picture is the same size; the sides alternate down the page.
 function layoutFor(i: number) {
-  if (i % 3 === 0) return "case-wide";
-  return i % 3 === 1 ? "case-split" : "case-split case-flip";
+  return i % 2 === 0 ? "case-split" : "case-split case-flip";
 }
 
 function Case({ item, index, layout }: { item: WorkItem; index: number; layout: string }) {
@@ -100,7 +98,7 @@ export default function WorkPage() {
           </header>
           <div className="case-list">
             {concepts.map((item, i) => (
-              <Case key={item.slug} item={item} index={delivered.length + i} layout="case-wide" />
+              <Case key={item.slug} item={item} index={delivered.length + i} layout={layoutFor(delivered.length + i)} />
             ))}
           </div>
         </section>

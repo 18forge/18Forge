@@ -100,7 +100,7 @@ export default function Home() {
         </a>
       </section>
 
-      <Closing title={closing.home} />
+      <Closing title={closing.home} note />
     </SiteShell>
   );
 }
